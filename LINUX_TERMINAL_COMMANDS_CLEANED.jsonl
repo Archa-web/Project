@@ -1,0 +1,2151 @@
+{"input": "show all active network connections.", "output": "netstat -tupln"}
+{"input": "count the number of lines in 'data.csv'.", "output": "wc -l data.csv"}
+{"input": "show last login information for all users", "output": "lastlog"}
+{"input": "records performance data for the process with pid 1234.", "output": "perf record -p 1234"}
+{"input": "changes to the shared memory filesystem directory.", "output": "cd /dev/shm"}
+{"input": "list linux namespaces e.g. pid network user", "output": "lsns"}
+{"input": "list cron jobs", "output": "crontab -l"}
+{"input": "how do I change current directory to /etc", "output": "cd /etc"}
+{"input": "how do I list files sorted by modification time newest first", "output": "ls -t"}
+{"input": "show status and settings of the eth0 interface", "output": "ethtool eth0"}
+{"input": "lists files sorted by size largest first.", "output": "ls -S"}
+{"input": "finds which package provides /usr/bin/nginx on debian-based systems.", "output": "apt-file search /usr/bin/nginx"}
+{"input": "compile c with all warnings", "output": "gcc -Wall main.c -o main"}
+{"input": "runs command with idle i/o priority.", "output": "ionice -c3 command"}
+{"input": "change owner of file.txt to user", "output": "chown user file.txt"}
+{"input": "list all loaded systemd services.", "output": "systemctl list-units --type=service"}
+{"input": "opens file.txt in vim in read-only mode.", "output": "vim -R file.txt"}
+{"input": "updates the modification time of file.txt.", "output": "touch -m file.txt"}
+{"input": "sets the append-only attribute on file.txt allowing only appending.", "output": "chattr +a file.txt"}
+{"input": "how do I check if the nginx service is enabled at boot", "output": "systemctl is-enabled nginx"}
+{"input": "sets the account expiration date for user to dec 31 2025.", "output": "usermod -e 2025-12-31 user"}
+{"input": "installs the nginx web server on debian-based systems.", "output": "apt install nginx"}
+{"input": "zip a folder", "output": "zip -r archive.zip folder/"}
+{"input": "how do I show sudo group entry from the group database", "output": "getent group sudo"}
+{"input": "show contents of readme.md", "output": "cat readme.md"}
+{"input": "show the kernel version and name.", "output": "uname -snr"}
+{"input": "moves dir1 to /archive only if newer or missing.", "output": "mv -u dir1 /archive"}
+{"input": "compile c++ program", "output": "g++ program.cpp -o program"}
+{"input": "sets the apparmor profile for nginx to complain mode.", "output": "aa-complain /etc/apparmor.d/usr.sbin.nginx"}
+{"input": "how do I monitor network interface and address changes in real-time", "output": "ip monitor"}
+{"input": "how do I show last 3 lines of file1.txt and file2.txt without headers", "output": "tail -q -n 3 file1.txt file2.txt"}
+{"input": "check if the nginx service is enabled at boot", "output": "systemctl is-enabled nginx"}
+{"input": "send arp requests to 192.168.1.1 to resolve mac address", "output": "arping 192.168.1.1"}
+{"input": "lists all active network connections and ports.", "output": "netstat -an"}
+{"input": "display the current working directory path.", "output": "pwd"}
+{"input": "how do I show first 2 lines of file1.txt and file2.txt without headers", "output": "head -q -n 2 file1.txt file2.txt"}
+{"input": "displays the current users username.", "output": "whoami"}
+{"input": "list all files in the current directory with human-readable sizes.", "output": "ls -lh"}
+{"input": "how do I update package lists for upgrades on centos/rhel systems", "output": "yum update"}
+{"input": "recursively removes all acls from files in /data.", "output": "setfacl -R -b /data"}
+{"input": "find all python files", "output": "find . -name '*.py'"}
+{"input": "opens config.conf in nano with line numbers.", "output": "nano -l config.conf"}
+{"input": "run python2 script", "output": "python script.py"}
+{"input": "checks the ext4 filesystem on /dev/sda1 without making changes.", "output": "fsck.ext4 -n /dev/sda1"}
+{"input": "how do I run vim in silent mode to execute script.vim", "output": "vim -es -S script.vim"}
+{"input": "how do I open file.txt in vim without loading any configuration", "output": "vim -u NONE file.txt"}
+{"input": "discard all local changes", "output": "git checkout -- ."}
+{"input": "show lines common to both sorted files file1.txt and file2.txt", "output": "comm -12 file1.txt file2.txt"}
+{"input": "delete a specific route to 10.0.0.0/24.", "output": "sudo ip route del 10.0.0.0/24"}
+{"input": "browse file one screen at a time", "output": "more file.txt"}
+{"input": "displays ip addresses and interface details.", "output": "ip addr show"}
+{"input": "displays cpu information in a parseable format without comments.", "output": "lscpu -p"}
+{"input": "view logfile.txt in less with case-insensitive search", "output": "less -i logfile.txt"}
+{"input": "how do I change priority of process with pid 1234 to 5", "output": "renice 5 1234"}
+{"input": "copy file to remote server", "output": "scp file.txt user@host:/remote/path/"}
+{"input": "how do I show file.txt with non-printable characters visible", "output": "cat -v file.txt"}
+{"input": "list processes accessing /var/log/syslog", "output": "fuser -v /var/log/syslog"}
+{"input": "how do I create a hexadecimal dump of file.bin", "output": "xxd file.bin"}
+{"input": "clean the terminal", "output": "clear"}
+{"input": "how do I set the mtu of eth0 to 9000 for jumbo frames", "output": "ip link set eth0 mtu 9000"}
+{"input": "clean up unused docker resources", "output": "docker system prune"}
+{"input": "open config.conf in nano with tabs set to 4 spaces", "output": "nano -T 4 config.conf"}
+{"input": "lists block devices with uuids and filesystem types.", "output": "blkid -o list"}
+{"input": "creates a hard link file2.txt to file1.txt.", "output": "cp -l file1.txt file2.txt"}
+{"input": "show details of transaction id 1 in yum history on centos/rhel", "output": "yum history info 1"}
+{"input": "check for available package updates on centos/rhel systems", "output": "yum check-update"}
+{"input": "displays the kernel release version.", "output": "uname -r"}
+{"input": "list docker images", "output": "docker images"}
+{"input": "how do I show information about the process with pid 1234", "output": "ps -p 1234"}
+{"input": "show file.bin in hexadecimal and ascii format", "output": "hexdump -C file.bin"}
+{"input": "run command with idle i/o priority", "output": "ionice -c3 command"}
+{"input": "displays extended attributes for file.txt.", "output": "getfattr -d file.txt"}
+{"input": "lists sockets with options suppressing header output.", "output": "ss -H -o"}
+{"input": "list transaction history for dnf on fedora-based systems", "output": "dnf history list"}
+{"input": "show driver information for the eth0 interface", "output": "ethtool -i eth0"}
+{"input": "how do I list background jobs with pids", "output": "jobs -l"}
+{"input": "list iptables rules with line numbers.", "output": "sudo iptables -L --line-numbers"}
+{"input": "lists files in reverse order.", "output": "ls -r"}
+{"input": "search for error in log file", "output": "grep 'error' app.log"}
+{"input": "displays processes owned by user in top.", "output": "top -u user"}
+{"input": "create a 100mb file.img filled with zeros", "output": "dd if=/dev/zero of=file.img bs=1M count=100"}
+{"input": "changes ownership of file.txt to user and group.", "output": "chown user:group file.txt"}
+{"input": "displays the transaction history of yum on centos/rhel systems.", "output": "yum history"}
+{"input": "moves file.txt to /tmp overwriting without prompting.", "output": "mv -f file.txt /tmp"}
+{"input": "reboot the system immediately.", "output": "sudo reboot"}
+{"input": "how do I list files with indicators e.g. / for directories for executables", "output": "ls -F"}
+{"input": "delete file.txt with interactive confirmation", "output": "rm -i file.txt"}
+{"input": "how do I remove columns 1 through 5 from file.txt", "output": "colrm 1 5 < file.txt"}
+{"input": "download a file using wget in the background.", "output": "wget -b http://example.com/file.zip"}
+{"input": "nmap scan without a ping to avoid detection.", "output": "nmap -Pn 192.168.1.1"}
+{"input": "list pids of processes using port 80", "output": "lsof -t -i :80"}
+{"input": "monitor network traffic on eth0 interactively", "output": "iptraf-ng -i eth0"}
+{"input": "display active network connections only.", "output": "ss -tn"}
+{"input": "compile java program", "output": "javac HelloWorld.java"}
+{"input": "view logfile.txt in less without wrapping long lines", "output": "less -S logfile.txt"}
+{"input": "sets the open file limit to 1024 for process with pid 1234.", "output": "prlimit --pid 1234 --nofile=1024"}
+{"input": "displays the status and settings of the eth0 interface.", "output": "ethtool eth0"}
+{"input": "clear screen", "output": "clear"}
+{"input": "show file type", "output": "file document.pdf"}
+{"input": "lists processes accessing /var/log/syslog.", "output": "fuser -v /var/log/syslog"}
+{"input": "show the directory tree structure.", "output": "tree"}
+{"input": "stash uncommitted changes", "output": "git stash"}
+{"input": "run gdb on the executable myapp.", "output": "gdb ./myapp"}
+{"input": "run node script", "output": "node script.js"}
+{"input": "search for a package named 'python3' in the repository.", "output": "apt search python3"}
+{"input": "how do I print physical current directory resolving symlinks", "output": "pwd -P"}
+{"input": "changes the login shell for user to zsh.", "output": "chsh -s /bin/zsh user"}
+{"input": "move dir1 to the /archive directory", "output": "mv dir1 /archive"}
+{"input": "dump machine instructions from an object file.", "output": "objdump -d main.o"}
+{"input": "how do I show system login logout and other events like reboots", "output": "last -x"}
+{"input": "compresses file.txt using zstandard algorithm.", "output": "zstd -z file.txt"}
+{"input": "moves dir1 to the /archive directory.", "output": "mv dir1 /archive"}
+{"input": "shows the status of the nginx service.", "output": "systemctl status nginx"}
+{"input": "search recursively for TODO in all files", "output": "grep -r 'TODO' ."}
+{"input": "show first 20 lines of server.log", "output": "head -n 20 server.log"}
+{"input": "show network connections", "output": "ss -tulpn"}
+{"input": "install node packages", "output": "npm install"}
+{"input": "how do I create a symbolic link link.conf to /etc/config.conf", "output": "ln -s /etc/config.conf link.conf"}
+{"input": "show information about user including login and mail status", "output": "finger user"}
+{"input": "search for word in multiple files", "output": "grep 'word' *.txt"}
+{"input": "change file owner to john", "output": "chown john file.txt"}
+{"input": "add execute permission for the owner of script.sh", "output": "chmod u+x script.sh"}
+{"input": "sets the maximum password age for user to 90 days.", "output": "chage -M 90 user"}
+{"input": "display the size of the current directory.", "output": "du -sh ."}
+{"input": "show line numbers when searching", "output": "grep -n 'pattern' file.txt"}
+{"input": "installs the apache web server on centos/rhel systems.", "output": "yum install httpd"}
+{"input": "show performance analysis from the last perf record", "output": "perf report"}
+{"input": "change password for newuser", "output": "passwd newuser"}
+{"input": "number each line of a file", "output": "cat -n file.txt"}
+{"input": "how do I show directory stack with indices vertically", "output": "dirs -v"}
+{"input": "list contents of tar file", "output": "tar -tzf archive.tar.gz"}
+{"input": "deletes file.txt with verbose output.", "output": "rm -v file.txt"}
+{"input": "show first 10 lines of access.log", "output": "head access.log"}
+{"input": "count lines in all python files", "output": "find . -name '*.py' | xargs wc -l"}
+{"input": "create a hard link file2.txt to file1.txt", "output": "ln file1.txt file2.txt"}
+{"input": "list processes owned by user", "output": "ps -u user"}
+{"input": "displays cpu information in json format.", "output": "lscpu -J"}
+{"input": "opens config.conf in nano with tabs set to 4 spaces.", "output": "nano -T 4 config.conf"}
+{"input": "reinstalls the httpd package on centos/rhel systems.", "output": "yum reinstall httpd"}
+{"input": "runs top for one iteration and exits.", "output": "top -n 1"}
+{"input": "set the maximum password age for user to 90 days", "output": "chage -M 90 user"}
+{"input": "set an environment variable", "output": "export MY_VAR=hello"}
+{"input": "lists block devices with full device paths.", "output": "lsblk -p"}
+{"input": "show the last logged-in users.", "output": "last"}
+{"input": "show kernel release version", "output": "uname -r"}
+{"input": "resume interrupted download", "output": "wget -c https://example.com/file.zip"}
+{"input": "move report.pdf to docs/", "output": "mv report.pdf docs/"}
+{"input": "show first 2 lines of file1.txt and file2.txt without headers", "output": "head -q -n 2 file1.txt file2.txt"}
+{"input": "reports network device statistics every second for 3 iterations.", "output": "sar -n DEV 1 3"}
+{"input": "how do I show cpu information in a parseable format", "output": "lscpu -b"}
+{"input": "update the local package database.", "output": "sudo apt update"}
+{"input": "how do I show logs for the nginx service", "output": "journalctl -u nginx"}
+{"input": "how do I create a btrfs filesystem on /dev/sdb1", "output": "mkfs.btrfs /dev/sdb1"}
+{"input": "dumps file.bin in hexadecimal format 4 bytes per group.", "output": "od -t x4 file.bin"}
+{"input": "displays the contents of a zstandard-compressed file.txt.zst.", "output": "zstdcat file.txt.zst"}
+{"input": "how do I change ownership of file.txt to user and group", "output": "chown user:group file.txt"}
+{"input": "how do I monitor logfile.txt in less similar to tail -f", "output": "less +F logfile.txt"}
+{"input": "execute shell script", "output": "./script.sh"}
+{"input": "find and delete all .log files", "output": "find . -name '*.log' -delete"}
+{"input": "traces the route packets take to google.com.", "output": "traceroute google.com"}
+{"input": "show policy routing rules", "output": "ip rule show"}
+{"input": "create a btrfs filesystem on /dev/sdb1", "output": "mkfs.btrfs /dev/sdb1"}
+{"input": "check where node is installed", "output": "which node"}
+{"input": "adds an selinux file context for /var/www and its contents.", "output": "semanage fcontext -a -t httpd_sys_content_t '/var/www(/.*)?'"}
+{"input": "add tcp port 8080 to selinux http_port_t for web services", "output": "semanage port -a -t http_port_t -p tcp 8080"}
+{"input": "force kill the process with pid 1234", "output": "kill -9 1234"}
+{"input": "how do I create directory newdir with parent directories as needed", "output": "mkdir -p /path/to/newdir"}
+{"input": "how do I install the nginx web server on debian-based systems", "output": "apt install nginx"}
+{"input": "how do I print current working directory", "output": "pwd"}
+{"input": "how do I list system v semaphore arrays", "output": "ipcs -s"}
+{"input": "display the manual page for the 'grep' command.", "output": "man grep"}
+{"input": "lists listening ports and associated processes.", "output": "netstat -tulpn"}
+{"input": "list selinux port mappings", "output": "semanage port -l"}
+{"input": "how do I list hardware device information", "output": "lsdev"}
+{"input": "converts a hexdump in hexdump.txt back to binary file.bin.", "output": "xxd -r -p hexdump.txt file.bin"}
+{"input": "lists all running processes with detailed information.", "output": "ps aux"}
+{"input": "how do I show cpu architecture information", "output": "lscpu"}
+{"input": "create secure_dir with rwx permissions for owner only", "output": "mkdir -m 700 secure_dir"}
+{"input": "records function traces for the process with pid 1234.", "output": "trace-cmd record -p function -P 1234"}
+{"input": "lists processes using port 80.", "output": "lsof -i :80"}
+{"input": "how do I show routing table using the ip command", "output": "ip route show"}
+{"input": "shows extended i/o statistics every second for 3 iterations.", "output": "iostat -x 1 3"}
+{"input": "how do I move file.txt to /tmp with interactive prompt for overwrite", "output": "mv -i file.txt /tmp"}
+{"input": "check dns lookup", "output": "nslookup google.com"}
+{"input": "show current shell being used", "output": "echo $SHELL"}
+{"input": "terminate the process with pid 1234 gracefully", "output": "kill 1234"}
+{"input": "test local port 8080 using netcat.", "output": "nc -zv localhost 8080"}
+{"input": "show last 10 lines of error.log", "output": "tail -n 10 error.log"}
+{"input": "opens an encrypted luks device /dev/sdb1 as crypt.", "output": "cryptsetup luksOpen /dev/sdb1 crypt"}
+{"input": "list block devices with filesystem types and uuids", "output": "lsblk -f"}
+{"input": "show network interface addresses in json format", "output": "ip -j addr"}
+{"input": "show files", "output": "ls"}
+{"input": "page through file", "output": "more largefile.txt"}
+{"input": "install the 'git' package using apt.", "output": "sudo apt install git"}
+{"input": "show failed login attempts for user", "output": "faillog -u user"}
+{"input": "remove the immutable attribute from file.txt", "output": "chattr -i file.txt"}
+{"input": "list selinux user mappings", "output": "semanage user -l"}
+{"input": "show ip address", "output": "ip addr show"}
+{"input": "installs python 3 on fedora-based systems.", "output": "dnf install python3"}
+{"input": "list contents of zip", "output": "unzip -l archive.zip"}
+{"input": "sets a 1gb soft and 2gb hard disk quota for user on /mnt.", "output": "xfs_quota -x -c 'limit bsoft=1g bhard=2g user' /mnt"}
+{"input": "runs emacs in batch mode to execute script.el.", "output": "emacs --batch -l script.el"}
+{"input": "ssh to server with username", "output": "ssh ubuntu@myserver.com"}
+{"input": "copy an ssh key to a remote server.", "output": "ssh-copy-id user@remote_host"}
+{"input": "how do I run sysdig to display network connection statistics", "output": "sysdig -c netstat"}
+{"input": "displays the contents of compressed logfile.gz without uncompressing.", "output": "zcat logfile.gz"}
+{"input": "set script.sh to executable for all readable/writable for owner", "output": "chmod 755 script.sh"}
+{"input": "generate a random 16-character password.", "output": "openssl rand -base64 12"}
+{"input": "how do I list all installed packages on debian-based systems", "output": "apt list --installed"}
+{"input": "run specific make target", "output": "make target"}
+{"input": "how do I show disk usage for the root filesystem", "output": "df /"}
+{"input": "rename old.txt to new.txt", "output": "mv old.txt new.txt"}
+{"input": "perform a flood ping to stress test.", "output": "sudo ping -f 192.168.1.1"}
+{"input": "create a new group named newgroup", "output": "groupadd newgroup"}
+{"input": "lists partitions on /dev/sda with size and type.", "output": "partx -s /dev/sda"}
+{"input": "delete a branch", "output": "git branch -d old-branch"}
+{"input": "displays error.log starting from the second line.", "output": "tail -n +2 error.log"}
+{"input": "how do I list partition tables for all disks", "output": "parted -l"}
+{"input": "how do I show information about user including login and mail status", "output": "finger user"}
+{"input": "marks job 1 to continue running after terminal exit.", "output": "disown -h %1"}
+{"input": "displays detailed statistics for the eth0 interface.", "output": "ethtool -S eth0"}
+{"input": "start node app", "output": "node app.js"}
+{"input": "lists selinux file context mappings.", "output": "semanage fcontext -l"}
+{"input": "counts the number of lines in file.txt.", "output": "wc -l file.txt"}
+{"input": "show critical chain of services affecting boot time", "output": "systemd-analyze critical-chain"}
+{"input": "how do I show current shell history", "output": "history"}
+{"input": "lists logged-in users with column headers.", "output": "who -H"}
+{"input": "list shared memory segments", "output": "ipcs -m"}
+{"input": "lists mounted ext4 filesystems with details.", "output": "findmnt -t ext4"}
+{"input": "run compiled program", "output": "./main"}
+{"input": "show status of the nginx service", "output": "systemctl status nginx"}
+{"input": "opens config.conf in nano converting tabs to spaces.", "output": "nano -E config.conf"}
+{"input": "how do I show active network connections only", "output": "ss -tn"}
+{"input": "show access control list acl for file.txt", "output": "getfacl file.txt"}
+{"input": "list available modules on fedora-based systems", "output": "dnf module list"}
+{"input": "displays the current users username.", "output": "whoami"}
+{"input": "how do I view logfile.txt in less with case-insensitive search", "output": "less -i logfile.txt"}
+{"input": "trace the network path to google.com.", "output": "traceroute google.com"}
+{"input": "adds write permission for the group on file.txt.", "output": "chmod g+w file.txt"}
+{"input": "how do I terminate processes accessing /var/log/syslog", "output": "fuser -k /var/log/syslog"}
+{"input": "print lines where column 3 is greater than 100", "output": "awk '$3 > 100' file.txt"}
+{"input": "list files by size", "output": "ls -lS"}
+{"input": "displays detailed memory hardware information.", "output": "dmidecode -t memory"}
+{"input": "add an audit rule to monitor write and attribute changes to /etc/passwd", "output": "auditctl -a always,exit -F path=/etc/passwd -F perm=wa"}
+{"input": "how do I set the append-only attribute on file.txt allowing only appending", "output": "chattr +a file.txt"}
+{"input": "list logged-in users with column headers", "output": "who -H"}
+{"input": "how do I change current directory to /var/log", "output": "cd /var/log"}
+{"input": "upgrades all packages to the latest versions on fedora-based systems.", "output": "dnf upgrade"}
+{"input": "show kernel version information", "output": "uname -a"}
+{"input": "how do I show inode details for /file.txt on /dev/sda1 using debugfs", "output": "debugfs -R 'stat /file.txt' /dev/sda1"}
+{"input": "move dir1 to /archive only if newer or missing", "output": "mv -u dir1 /archive"}
+{"input": "show the arp table entries.", "output": "arp -a"}
+{"input": "changes the current directory to /usr/local/bin.", "output": "cd /usr/local/bin"}
+{"input": "adds newuser to the sudo group.", "output": "usermod -aG sudo newuser"}
+{"input": "how do I show driver information for the eth0 interface", "output": "ethtool -i eth0"}
+{"input": "runs top in batch mode for one iteration.", "output": "top -b -n 1"}
+{"input": "prints the logical current directory preserving symlinks.", "output": "pwd -L"}
+{"input": "replace text in file and save", "output": "sed -i 's/old/new/g' file.txt"}
+{"input": "how do I set the maximum number of open file descriptors to 1024", "output": "ulimit -n 1024"}
+{"input": "calculate the md5 checksum of 'package.deb'.", "output": "md5sum package.deb"}
+{"input": "find and count all TODO comments", "output": "grep -r 'TODO' . | wc -l"}
+{"input": "how do I show memory usage in megabytes", "output": "free -m"}
+{"input": "how do I open config.conf in nano converting tabs to spaces", "output": "nano -E config.conf"}
+{"input": "recursively lists extended attributes for files in /data.", "output": "lsattr -R /data"}
+{"input": "filter journalctl for the ssh service.", "output": "journalctl -u ssh"}
+{"input": "recursively changes group ownership of /data to group.", "output": "chgrp -R group /data"}
+{"input": "view logfile.txt in less treating backspaces as non-destructive", "output": "less -u logfile.txt"}
+{"input": "shows processes for a specific user in htop.", "output": "htop -u user"}
+{"input": "how do I add an audit rule to monitor write and attribute changes to /etc/passwd", "output": "auditctl -a always,exit -F path=/etc/passwd -F perm=wa"}
+{"input": "list network namespaces", "output": "ip netns list"}
+{"input": "displays cpu architecture information.", "output": "lscpu"}
+{"input": "joins two sorted files on a common field using comma as delimiter.", "output": "join -t ',' file1.txt file2.txt"}
+{"input": "show information about the process with pid 1234", "output": "ps -p 1234"}
+{"input": "list listening tcp and udp sockets with numeric addresses", "output": "ss -tulwn"}
+{"input": "ignore whitespace when comparing", "output": "diff -w file1.txt file2.txt"}
+{"input": "how do I list pending jobs scheduled with at", "output": "atq"}
+{"input": "how do I set file.txt to read/write for owner read-only for others", "output": "chmod 644 file.txt"}
+{"input": "how do I check /dev/sdb for bad blocks with verbose output", "output": "badblocks -v /dev/sdb"}
+{"input": "show first 5 lines of access.log", "output": "head -n 5 access.log"}
+{"input": "monitors network traffic on eth0 with a graphical interface.", "output": "nload eth0"}
+{"input": "how do I show network interface statistics", "output": "ip -s link"}
+{"input": "verifies the integrity of files in the nginx package.", "output": "rpm -V nginx"}
+{"input": "updates package lists and upgrades packages on fedora-based systems.", "output": "dnf update"}
+{"input": "sets the secure deletion attribute on file.txt zeroing data on delete.", "output": "chattr +s file.txt"}
+{"input": "show total size of /var/log in human-readable format", "output": "du -sh /var/log"}
+{"input": "copy local file to remote server", "output": "scp file.txt user@host:/remote/path/"}
+{"input": "set the secure deletion attribute on file.txt zeroing data on delete", "output": "chattr +s file.txt"}
+{"input": "updates the timestamp of file.txt without creating it if it doesnt exist.", "output": "touch -c file.txt"}
+{"input": "displays file.txt with end-of-line markers and non-printable characters.", "output": "cat -e file.txt"}
+{"input": "displays script.sh with line numbers.", "output": "cat -n script.sh"}
+{"input": "opens file.txt in emacs with minimal configuration.", "output": "emacs -Q file.txt"}
+{"input": "run command in background", "output": "command &"}
+{"input": "run vim in silent mode to execute script.vim", "output": "vim -es -S script.vim"}
+{"input": "show detailed statistics for a network interface.", "output": "ip -s link show eth0"}
+{"input": "list all installed python packages via pip.", "output": "pip list"}
+{"input": "how do I show real-time system processes and resource usage", "output": "top"}
+{"input": "displays memory usage in megabytes.", "output": "free -m"}
+{"input": "remove all spaces from file", "output": "tr -d ' ' < file.txt"}
+{"input": "display the first 5 lines of 'database.sql'.", "output": "head -n 5 database.sql"}
+{"input": "how do I open config.conf in nano with constant cursor position display", "output": "nano -c config.conf"}
+{"input": "how do I show tcp protocol statistics", "output": "netstat -s | grep Tcp"}
+{"input": "run htop with a tree view of processes", "output": "htop -t"}
+{"input": "views logfile.txt in less preserving raw control characters.", "output": "less -r logfile.txt"}
+{"input": "show real-time system processes and resource usage", "output": "top"}
+{"input": "recursively delete directory and its contents", "output": "rm -rf directory"}
+{"input": "show contents of logfile.txt", "output": "cat logfile.txt"}
+{"input": "create a command alias", "output": "alias ll='ls -la'"}
+{"input": "empty the terminal", "output": "clear"}
+{"input": "how do I create a directory named newdir", "output": "mkdir newdir"}
+{"input": "show routing table with numeric addresses", "output": "route -n"}
+{"input": "decodes base64 content from encoded.txt to stdout.", "output": "base64 -d encoded.txt"}
+{"input": "create compressed backup of home", "output": "tar -czf home_backup.tar.gz ~/"}
+{"input": "redirect stderr to file", "output": "command 2> error.txt"}
+{"input": "how do I install python 3 on fedora-based systems", "output": "dnf install python3"}
+{"input": "how do I send 2 icmp echo requests to the ip 192.168.1.1", "output": "ping -c 2 192.168.1.1"}
+{"input": "show which 'python' executable is being used.", "output": "which python"}
+{"input": "how do I show kernel release version", "output": "uname -r"}
+{"input": "list file locks held by processes", "output": "lslocks"}
+{"input": "which python is being used", "output": "which python3"}
+{"input": "how do I show file.txt with non-blank lines numbered", "output": "cat -b file.txt"}
+{"input": "how do I show superblock and block group information for /dev/sda1", "output": "dumpe2fs -h /dev/sda1"}
+{"input": "remove duplicate lines from a sorted file 'data.txt'.", "output": "uniq data.txt"}
+{"input": "opens config.conf in nano without wrapping long lines.", "output": "nano -w config.conf"}
+{"input": "scans port 22 on 192.168.1.1 for connectivity.", "output": "netcat -zv 192.168.1.1 22"}
+{"input": "compress folder as tar.bz2", "output": "tar -cjf archive.tar.bz2 myfolder/"}
+{"input": "how do I remove unused dependencies on fedora-based systems", "output": "dnf autoremove"}
+{"input": "show current system load and uptime", "output": "uptime"}
+{"input": "how do I change group ownership of file.txt to group", "output": "chown :group file.txt"}
+{"input": "change group ownership of file.txt to group", "output": "chgrp group file.txt"}
+{"input": "how do I set file.txt to read/write for owner only", "output": "chmod 600 file.txt"}
+{"input": "delete file notes.txt", "output": "rm notes.txt"}
+{"input": "kill all python processes", "output": "pkill python3"}
+{"input": "edit the system crontab file.", "output": "crontab -e"}
+{"input": "how do I show ip routing table", "output": "ip route show"}
+{"input": "how do I view logfile.txt in less preserving raw control characters", "output": "less -r logfile.txt"}
+{"input": "tag a release", "output": "git tag -a v1.0 -m 'release'"}
+{"input": "run top in batch mode for one iteration", "output": "top -b -n 1"}
+{"input": "monitor error.log in real-time", "output": "tail -f error.log"}
+{"input": "monitor error.log for new lines starting with no initial output", "output": "tail -n 0 -f error.log"}
+{"input": "go to home folder", "output": "cd ~"}
+{"input": "show disk usage for the root filesystem", "output": "df /"}
+{"input": "list files sorted by modification time newest first", "output": "ls -t"}
+{"input": "create a symbolic link link.conf to /etc/config.conf", "output": "ln -s /etc/config.conf link.conf"}
+{"input": "sends test message to the system log.", "output": "logger 'Test message'"}
+{"input": "show hardware platform", "output": "uname -i"}
+{"input": "removes unused dependencies on fedora-based systems.", "output": "dnf autoremove"}
+{"input": "show what make would do", "output": "make --dry-run"}
+{"input": "print first and third columns", "output": "awk '{print $1, $3}' file.txt"}
+{"input": "change to the current users home directory", "output": "cd ~"}
+{"input": "displays total memory usage including swap.", "output": "free -t"}
+{"input": "show current shell history", "output": "history"}
+{"input": "sends 4 icmp echo requests to google.com to check connectivity.", "output": "ping -c 4 google.com"}
+{"input": "how do I view largefile.txt with pagination", "output": "less largefile.txt"}
+{"input": "displays memory usage with wide format.", "output": "free -w"}
+{"input": "compile main.c specifying an include path for headers.", "output": "gcc -I/usr/include/custom main.c -o main"}
+{"input": "create or overwrites newfile.txt with input from stdin ctrld to end", "output": "cat > newfile.txt"}
+{"input": "how do I monitor network traffic on eth0 interactively", "output": "iptraf-ng -i eth0"}
+{"input": "show real-time kernel slab cache usage", "output": "slabtop"}
+{"input": "sends the sigkill signal to the process with pid 1234.", "output": "kill -SIGKILL 1234"}
+{"input": "how do I show memory usage every 2 seconds", "output": "free -s 2"}
+{"input": "install the nginx web server on debian-based systems", "output": "apt install nginx"}
+{"input": "run python script", "output": "python3 script.py"}
+{"input": "show version control log for /etc managed by etckeeper", "output": "etckeeper vcs log"}
+{"input": "formats file.bin as a single line of hex bytes.", "output": "hexdump -ve '/1 \"%02x\"' file.bin"}
+{"input": "run sh script", "output": "sh script.sh"}
+{"input": "create a tar archive of /data preserving acls and extended attributes", "output": "tar --acls --xattrs -cpf backup.tar /data"}
+{"input": "list all selinux boolean settings", "output": "getsebool -a"}
+{"input": "deletes file.txt without prompting.", "output": "rm -f file.txt"}
+{"input": "monitors filesystem access events in real-time.", "output": "fatrace"}
+{"input": "unzip to directory", "output": "unzip archive.zip -d output/"}
+{"input": "list sockets with options suppressing header output", "output": "ss -H -o"}
+{"input": "show the bash version.", "output": "bash --version"}
+{"input": "how do I list files sorted by size largest first", "output": "ls -S"}
+{"input": "checks if the nginx service is enabled at boot.", "output": "systemctl is-enabled nginx"}
+{"input": "remove execute permission for the group on script.sh", "output": "chmod g-x script.sh"}
+{"input": "displays details of transaction id 1 in yum history on centos/rhel.", "output": "yum history info 1"}
+{"input": "show processes in tree view", "output": "pstree"}
+{"input": "run executable", "output": "./program"}
+{"input": "how do I copy script.sh to /usr/local/bin with 755 permissions", "output": "install -m 755 script.sh /usr/local/bin"}
+{"input": "monitor disk i/o in real-time.", "output": "iostat -dx 2"}
+{"input": "how do I remove the immutable attribute from file.txt", "output": "chattr -i file.txt"}
+{"input": "how do I show current working directory path", "output": "pwd"}
+{"input": "lists selinux booleans with descriptions.", "output": "semanage boolean -l"}
+{"input": "open file in more", "output": "more notes.txt"}
+{"input": "check ufw firewall rules.", "output": "sudo ufw status verbose"}
+{"input": "show information about the 'bash' executable", "output": "ls -l $(which bash)"}
+{"input": "how do I set the immutable attribute on file.txt preventing modifications", "output": "chattr +i file.txt"}
+{"input": "how do I recursively delete dir1 and its contents", "output": "rm -r dir1"}
+{"input": "delete the user 'guest'.", "output": "sudo deluser guest"}
+{"input": "how do I open config.conf in nano at line 10", "output": "nano +10 config.conf"}
+{"input": "show container logs", "output": "docker logs mycontainer"}
+{"input": "removes read permission for others on file.txt.", "output": "chmod o-r file.txt"}
+{"input": "how do I create a named pipe called pipe", "output": "mkfifo pipe"}
+{"input": "how do I list processes with open tcp listening sockets", "output": "lsof -iTCP -sTCP:LISTEN"}
+{"input": "show ip routing table", "output": "ip route show"}
+{"input": "run node server", "output": "node server.js"}
+{"input": "how do I list listening tcp and udp sockets", "output": "ss -tuln"}
+{"input": "finds which package provides /bin/bash on fedora-based systems.", "output": "dnf provides /bin/bash"}
+{"input": "run sysdig to display network connection statistics", "output": "sysdig -c netstat"}
+{"input": "list files with indicators e.g. / for directories for executables", "output": "ls -F"}
+{"input": "list logged-in users with idle time and pid", "output": "who -u"}
+{"input": "how do I send tcp syn packets to 192.168.1.1 for network probing", "output": "hping3 -S 192.168.1.1"}
+{"input": "how do I move file.txt to /tmp without overwriting existing files", "output": "mv -n file.txt /tmp"}
+{"input": "check python version", "output": "python3 --version"}
+{"input": "search for 'TODO' in all .txt files recursively.", "output": "grep -r \"TODO\" *.txt"}
+{"input": "display the system boot log.", "output": "journalctl -b"}
+{"input": "lists listening tcp and udp sockets with numeric addresses.", "output": "ss -tulwn"}
+{"input": "how do I show real-time system resource usage using top", "output": "top"}
+{"input": "start python2 shell", "output": "python"}
+{"input": "terminates all processes owned by user.", "output": "pkill -u user"}
+{"input": "run command with a 10-second timeout", "output": "timeout 10s command"}
+{"input": "show running processes", "output": "ps aux"}
+{"input": "monitor real-time network traffic on eth0.", "output": "sudo nethogs eth0"}
+{"input": "show real-time memory stats", "output": "watch -n 1 free -m"}
+{"input": "wraps file.txt at 80 characters breaking at spaces.", "output": "fold -s -w 80 file.txt"}
+{"input": "how do I set the selinux user to system_u for file.txt", "output": "chcon -u system_u file.txt"}
+{"input": "show file.txt with non-blank lines numbered", "output": "cat -b file.txt"}
+{"input": "recursively lists all files and subdirectories.", "output": "ls -R"}
+{"input": "how do I list block devices with uuids and filesystem types", "output": "blkid -o list"}
+{"input": "how do I create a hard link file2.txt to file1.txt", "output": "ln file1.txt file2.txt"}
+{"input": "forcefully kill a process with PID 5678.", "output": "kill -9 5678"}
+{"input": "change to the /proc directory of the current shell process", "output": "cd /proc/$$"}
+{"input": "execute bash file", "output": "bash deploy.sh"}
+{"input": "lists files with colorized output based on file type.", "output": "ls --color=auto"}
+{"input": "list traffic control queueing disciplines", "output": "tc qdisc show"}
+{"input": "displays real-time system processes and resource usage.", "output": "top"}
+{"input": "recursively delete dir1 and its contents", "output": "rm -r dir1"}
+{"input": "changes to the home directory of user.", "output": "cd ~user"}
+{"input": "how do I show first 10 lines of access.log", "output": "head access.log"}
+{"input": "how do I show time of the last system boot", "output": "who -b"}
+{"input": "how do I show network configuration of all interfaces", "output": "ifconfig -a"}
+{"input": "find where a command is located", "output": "which python3"}
+{"input": "compile main.c and link a library named 'ssl'.", "output": "gcc main.c -lssl -o main"}
+{"input": "how do I list ipsec security associations", "output": "ip xfrm state"}
+{"input": "follow container logs", "output": "docker logs -f mycontainer"}
+{"input": "identifies which package owns /usr/bin/nginx.", "output": "rpm -qf /usr/bin/nginx"}
+{"input": "display the contents of 'readme.md' in the terminal.", "output": "cat readme.md"}
+{"input": "how do I list processes with the command name nginx", "output": "ps -C nginx"}
+{"input": "counts the number of words in file.txt.", "output": "wc -w file.txt"}
+{"input": "monitor cpu disk network and system activity in real-time", "output": "dstat -cdngy"}
+{"input": "how do I show detailed statistics for the eth0 interface", "output": "ethtool -S eth0"}
+{"input": "views logfile.txt in less with case-insensitive search.", "output": "less -i logfile.txt"}
+{"input": "remove an image", "output": "docker rmi ubuntu:22.04"}
+{"input": "how do I list extended attributes of file.txt", "output": "lsattr file.txt"}
+{"input": "run nodejs file", "output": "node index.js"}
+{"input": "numbers the lines of file.txt.", "output": "nl file.txt"}
+{"input": "how do I copy file.txt to /backup with verbose output", "output": "cp -v file.txt /backup"}
+{"input": "lists pids of processes using port 80.", "output": "lsof -t -i :80"}
+{"input": "runs command with a nice value of 10 lower priority.", "output": "nice -n 10 command"}
+{"input": "how do I show system logs since the last boot", "output": "journalctl -b"}
+{"input": "show unique lines only", "output": "uniq file.txt"}
+{"input": "how do I check the integrity of files in the nginx package on debian-based systems", "output": "debsums -c nginx"}
+{"input": "show detailed information about logged-in users", "output": "w"}
+{"input": "show contents of an xz-compressed file.txt.xz", "output": "xzcat file.txt.xz"}
+{"input": "search for text 'main' in 'code.c' and show line numbers.", "output": "grep -n \"main\" code.c"}
+{"input": "make new directory called logs", "output": "mkdir logs"}
+{"input": "show the current system load and uptime.", "output": "uptime"}
+{"input": "count lines in file", "output": "wc -l file.txt"}
+{"input": "how do I show lines common to both sorted files file1.txt and file2.txt", "output": "comm -12 file1.txt file2.txt"}
+{"input": "lists all installed packages on fedora-based systems.", "output": "dnf repoquery --installed"}
+{"input": "add file to existing zip", "output": "zip archive.zip newfile.txt"}
+{"input": "show memory usage", "output": "free -h"}
+{"input": "show all running processes for the current user.", "output": "ps -u $USER"}
+{"input": "how do I show kernel version information", "output": "uname -a"}
+{"input": "how do I set i/o scheduling class to best-effort for process with pid 1234", "output": "ionice -c2 -p 1234"}
+{"input": "how do I show hardware platform", "output": "uname -i"}
+{"input": "list block devices with name size and type columns", "output": "lsblk -o NAME,SIZE,TYPE"}
+{"input": "show the current user's username.", "output": "whoami"}
+{"input": "how do I list scsi devices and their attributes", "output": "lsscsi"}
+{"input": "show routing table", "output": "ip route show"}
+{"input": "show all established tcp connections.", "output": "ss -t state established"}
+{"input": "watch log file live", "output": "tail -f /var/log/syslog"}
+{"input": "converts spaces to tabs in file.txt.", "output": "unexpand file.txt"}
+{"input": "display the file type of 'mystery_file'.", "output": "file mystery_file"}
+{"input": "how do I set the maximum password age for user to 90 days", "output": "chage -M 90 user"}
+{"input": "check open files by process", "output": "lsof -p 1234"}
+{"input": "show cpu information in a parseable format", "output": "lscpu -b"}
+{"input": "displays directory stack one entry per line.", "output": "dirs -p"}
+{"input": "how do I list configured ip sets for firewall rules", "output": "ipset list"}
+{"input": "finds all files with .log extension in /var.", "output": "find /var -name '*.log'"}
+{"input": "show how long the system has been running.", "output": "uptime"}
+{"input": "monitors cpu disk network and system activity in real-time.", "output": "dstat -cdngy"}
+{"input": "count total characters", "output": "wc -c file.txt"}
+{"input": "how do I add testuser with a specified home directory", "output": "adduser --home /home/testuser testuser"}
+{"input": "how do I show xfs filesystem geometry for /dev/sda1", "output": "xfs_info /dev/sda1"}
+{"input": "how do I show information about user accounts and their login history", "output": "lslogins"}
+{"input": "opens debugfs in read-only mode for the ext2/ext3/ext4 filesystem on /dev/sda1.", "output": "debugfs -c /dev/sda1"}
+{"input": "how do I show system boot log", "output": "journalctl -b"}
+{"input": "display the current system date and time.", "output": "date"}
+{"input": "show calendar for the current month", "output": "cal"}
+{"input": "how do I show shared library dependencies of an executable", "output": "ldd ./myapp"}
+{"input": "create an empty file named newfile.txt or updates its timestamp", "output": "touch newfile.txt"}
+{"input": "search the history for 'grep' commands.", "output": "history | grep grep"}
+{"input": "show the network configuration of all interfaces.", "output": "ifconfig -a"}
+{"input": "wipe terminal output", "output": "clear"}
+{"input": "filter csv by column value", "output": "awk -F',' '$2 == \"active\"' file.csv"}
+{"input": "how do I change to the home directory of user", "output": "cd ~user"}
+{"input": "how do I list logged-in users with column headers", "output": "who -H"}
+{"input": "prints the current working directory.", "output": "pwd"}
+{"input": "how do I copy dir1 to /backup preserving structure and attributes", "output": "cp -a dir1 /backup"}
+{"input": "how do I create a hard link file2.txt to file1.txt", "output": "cp -l file1.txt file2.txt"}
+{"input": "how do I send test message to the system log", "output": "logger 'Test message'"}
+{"input": "how do I install the apache web server on centos/rhel systems", "output": "yum install httpd"}
+{"input": "how do I show disk usage with filesystem types", "output": "df -T"}
+{"input": "show only the first column of 'data.txt'", "output": "awk '{print $1}' data.txt"}
+{"input": "send icmp echo requests to google.com every 0.5 seconds", "output": "ping -i 0.5 google.com"}
+{"input": "how do I list all btrfs filesystems and their devices", "output": "btrfs filesystem show"}
+{"input": "list files with colorized output based on file type", "output": "ls --color=auto"}
+{"input": "list services and their startup times", "output": "systemd-analyze blame"}
+{"input": "how do I list shared memory segments", "output": "ipcs -m"}
+{"input": "check node version", "output": "node --version"}
+{"input": "converts group entries to use shadow groups.", "output": "grpconv"}
+{"input": "download file with wget", "output": "wget https://example.com/file.zip"}
+{"input": "how do I show metadata for the luks partition on /dev/sdb1", "output": "cryptsetup luksDump /dev/sdb1"}
+{"input": "how do I show network interface addresses in json format", "output": "ip -j addr"}
+{"input": "displays detailed information about the httpd package on centos/rhel.", "output": "yum info httpd"}
+{"input": "show arp cache without resolving hostnames", "output": "arp -n"}
+{"input": "open file.txt in vim at line 10", "output": "vim +10 file.txt"}
+{"input": "joins lines of two sorted files on a common field.", "output": "join file1.txt file2.txt"}
+{"input": "copy file.txt to backup/", "output": "cp file.txt backup/"}
+{"input": "check the integrity of files in the nginx package on debian-based systems", "output": "debsums -c nginx"}
+{"input": "how do I show operating system name", "output": "uname -o"}
+{"input": "change ownership of symlink to user without affecting the target", "output": "chown -h user symlink"}
+{"input": "source a shell script", "output": "sh env.sh"}
+{"input": "set the account expiration date for user to dec 31 2025", "output": "usermod -e 2025-12-31 user"}
+{"input": "send tcp probes to port 80 on 192.168.1.1 for network testing", "output": "nping --tcp -p 80 192.168.1.1"}
+{"input": "how do I search for nginx packages in debian-based repositories", "output": "apt search nginx"}
+{"input": "show log messages with priority 3 errors since the last boot", "output": "journalctl -p 3 -b"}
+{"input": "how do I interactively add a new user to the system", "output": "adduser newuser"}
+{"input": "binds process with pid 1234 to cpus 0-3.", "output": "taskset -cp 0-3 1234"}
+{"input": "go back to previous directory", "output": "cd -"}
+{"input": "show network interface statistics", "output": "ip -s link"}
+{"input": "how do I show detailed file status including timestamps and permissions", "output": "stat file.txt"}
+{"input": "displays the first 20 lines of access.log.", "output": "head -n 20 access.log"}
+{"input": "collects performance statistics for the process with pid 1234.", "output": "perf stat -p 1234"}
+{"input": "show top running processes by memory usage.", "output": "ps aux --sort=-%mem | head"}
+{"input": "displays system hardware information.", "output": "dmidecode -t system"}
+{"input": "how do I show installation status and priority of nginx on debian-based systems", "output": "apt policy nginx"}
+{"input": "run script with python", "output": "python app.py"}
+{"input": "show extended attributes for file.txt", "output": "getfattr -d file.txt"}
+{"input": "displays the contents of logfile.txt.", "output": "cat logfile.txt"}
+{"input": "changes ownership of symlink to user without affecting the target.", "output": "chown -h user symlink"}
+{"input": "how do I show amount of free and used memory in megabytes", "output": "free -m"}
+{"input": "change ownership of file.txt to user and group", "output": "chown user:group file.txt"}
+{"input": "displays resource usage by control groups.", "output": "systemd-cgtop"}
+{"input": "open debugfs in read-only mode for the ext2/ext3/ext4 filesystem on /dev/sda1", "output": "debugfs -c /dev/sda1"}
+{"input": "list files in a single column", "output": "ls -1"}
+{"input": "how do I show history of all commands typed", "output": "history"}
+{"input": "reloads the apparmor profile for nginx.", "output": "apparmor_parser -R /etc/apparmor.d/usr.sbin.nginx"}
+{"input": "watch a command every 2 seconds", "output": "watch -n 2 df -h"}
+{"input": "how do I run netstat -tuln every 2 seconds highlighting changes", "output": "watch -d 'netstat -tuln'"}
+{"input": "remove read permission for others on file.txt", "output": "chmod o-r file.txt"}
+{"input": "change permissions of 'script.sh' to be executable", "output": "chmod +x script.sh"}
+{"input": "disables the eth0 network interface.", "output": "ifconfig eth0 down"}
+{"input": "changes the priority of process with pid 1234 to 5.", "output": "renice 5 1234"}
+{"input": "show files with details", "output": "ls -lh"}
+{"input": "how do I update package lists and upgrades packages on fedora-based systems", "output": "dnf update"}
+{"input": "allow incoming traffic on port 80 using ufw.", "output": "sudo ufw allow 80/tcp"}
+{"input": "list firewall rules with verbose output", "output": "iptables -L -v"}
+{"input": "show unique ip addresses in log", "output": "grep -oE '[0-9]+\\.[0-9]+\\.[0-9]+\\.[0-9]+' access.log | sort | uniq"}
+{"input": "shows the critical chain of services affecting boot time.", "output": "systemd-analyze critical-chain"}
+{"input": "how do I list files in long format with human-readable sizes", "output": "ls -lh"}
+{"input": "how do I update the timestamp of file.txt without creating it if it doesnt exist", "output": "touch -c file.txt"}
+{"input": "displays the ip routing table.", "output": "ip route show"}
+{"input": "show system's hostname", "output": "hostname"}
+{"input": "creates a btrfs subvolume at /mnt/subvol.", "output": "btrfs subvolume create /mnt/subvol"}
+{"input": "find all files modified in the last 24 hours.", "output": "find . -mtime -1"}
+{"input": "open file.txt in emacs in terminal non-gui mode", "output": "emacs -nw file.txt"}
+{"input": "displays the kernel routing table.", "output": "netstat -r"}
+{"input": "returns pids of running nginx processes.", "output": "pidof nginx"}
+{"input": "run job every hour", "output": "0 * * * * /path/to/script.sh"}
+{"input": "displays real-time kernel slab cache usage.", "output": "slabtop"}
+{"input": "sets the immutable attribute on file.txt preventing modifications.", "output": "chattr +i file.txt"}
+{"input": "show cpu information in json format", "output": "lscpu -J"}
+{"input": "how do I update the modification time of file.txt", "output": "touch -m file.txt"}
+{"input": "show inode usage for filesystems", "output": "df -i"}
+{"input": "runs sysdig to display network connection statistics.", "output": "sysdig -c netstat"}
+{"input": "create symbolic link", "output": "ln -s /original /link"}
+{"input": "how do I move file.txt to the /tmp directory", "output": "mv file.txt /tmp"}
+{"input": "how do I list firewall rules with verbose output", "output": "iptables -L -v"}
+{"input": "unzip a file", "output": "unzip archive.zip"}
+{"input": "how do I delete file.txt without prompting", "output": "rm -f file.txt"}
+{"input": "lists files with indicators e.g. / for directories for executables.", "output": "ls -F"}
+{"input": "show docker disk usage", "output": "docker system df"}
+{"input": "shut down the system now.", "output": "sudo shutdown -h now"}
+{"input": "check if two files are identical", "output": "diff -q file1.txt file2.txt"}
+{"input": "how do I add write permission for the group on file.txt", "output": "chmod g+w file.txt"}
+{"input": "how do I change current directory to /tmp", "output": "cd /tmp"}
+{"input": "check path of gcc", "output": "which gcc"}
+{"input": "show current disk partition table.", "output": "lsblk"}
+{"input": "how do I list control groups in the system", "output": "lscgroup"}
+{"input": "show active network connections only", "output": "ss -tn"}
+{"input": "list all pci devices.", "output": "lspci"}
+{"input": "create shortcut for git status", "output": "alias gs='git status'"}
+{"input": "show i/o usage by processes showing only active ones", "output": "iotop -o"}
+{"input": "run make and ignore errors", "output": "make -k"}
+{"input": "show script.sh with line numbers", "output": "cat -n script.sh"}
+{"input": "how do I list partitions on /dev/sda with size and type", "output": "partx -s /dev/sda"}
+{"input": "page through large file", "output": "more largefile.txt"}
+{"input": "list currently logged-in users", "output": "who"}
+{"input": "display the public ip using curl.", "output": "curl ifconfig.me"}
+{"input": "recursively removes setuid permissions from files in /data.", "output": "chmod -R u-s /data"}
+{"input": "reformats file.txt to wrap lines at 80 characters.", "output": "fmt -w 80 file.txt"}
+{"input": "run bash script", "output": "bash run.sh"}
+{"input": "open file.txt in emacs with minimal configuration", "output": "emacs -Q file.txt"}
+{"input": "displays cpu information in a parseable format.", "output": "lscpu -b"}
+{"input": "kill a process with PID 1234.", "output": "kill 1234"}
+{"input": "compile and run cpp", "output": "g++ main.cpp -o main && ./main"}
+{"input": "how do I run command with a nice value of 10 lower priority", "output": "nice -n 10 command"}
+{"input": "displays all kernel parameters and their values.", "output": "sysctl -a"}
+{"input": "how do I show status of apparmor profiles and processes", "output": "aa-status"}
+{"input": "how do I create a backup copy of file.txt as file.bak", "output": "cp file.txt file.bak"}
+{"input": "show memory usage in megabytes", "output": "free -m"}
+{"input": "displays the first 10 lines of access.log.", "output": "head access.log"}
+{"input": "connect to server on port 2222", "output": "ssh -p 2222 user@hostname"}
+{"input": "check http status of a url", "output": "curl -Is https://example.com | head -1"}
+{"input": "displays xfs filesystem geometry for /dev/sda1.", "output": "xfs_info /dev/sda1"}
+{"input": "update the timestamp of file.txt without creating it if it doesnt exist", "output": "touch -c file.txt"}
+{"input": "wraps lines in file.txt to 80 characters.", "output": "fold -w 80 file.txt"}
+{"input": "how do I list current audit rules for system monitoring", "output": "auditctl -l"}
+{"input": "how do I monitor error.log in real-time", "output": "tail -f error.log"}
+{"input": "how do I list currently logged-in users", "output": "who"}
+{"input": "list running containers", "output": "docker ps"}
+{"input": "remove all acl entries from file.txt restoring default permissions", "output": "setfacl -b file.txt"}
+{"input": "set i/o scheduling class to best-effort for process with pid 1234", "output": "ionice -c2 -p 1234"}
+{"input": "how do I recursively delete directory and its contents", "output": "rm -rf directory"}
+{"input": "search for nginx packages in debian-based repositories", "output": "apt search nginx"}
+{"input": "sends icmp echo requests to google.com every 0.5 seconds.", "output": "ping -i 0.5 google.com"}
+{"input": "create a backup copy of file.txt as file.bak", "output": "cp file.txt file.bak"}
+{"input": "opens config.conf in nano with 80-column line wrapping.", "output": "nano -r 80 config.conf"}
+{"input": "how do I list listening tcp and udp sockets with numeric addresses", "output": "ss -tulwn"}
+{"input": "show network protocol statistics", "output": "netstat -s"}
+{"input": "how do I show resource usage by control groups", "output": "systemd-cgtop"}
+{"input": "list block devices in json format", "output": "lsblk -J"}
+{"input": "remove duplicate consecutive lines from file.txt", "output": "uniq file.txt"}
+{"input": "how do I show current crontab for the user", "output": "crontab -l"}
+{"input": "show logs for a specific time range.", "output": "journalctl --since '1 hour ago'"}
+{"input": "set the gecos comment field for user to full name", "output": "usermod -c 'Full Name' user"}
+{"input": "reports virtual memory statistics in megabytes.", "output": "vmstat -SM"}
+{"input": "shows detailed information about logged-in users.", "output": "w"}
+{"input": "how do I list traffic control queueing disciplines", "output": "tc qdisc show"}
+{"input": "trace route to host", "output": "traceroute google.com"}
+{"input": "opens config.conf in nano at line 10.", "output": "nano +10 config.conf"}
+{"input": "show last logged-in users", "output": "last"}
+{"input": "how do I list loaded kernel modules", "output": "lsmod"}
+{"input": "creates or overwrites newfile.txt with input from stdin ctrld to end.", "output": "cat > newfile.txt"}
+{"input": "clear the terminal screen.", "output": "clear"}
+{"input": "terminates all nginx processes.", "output": "killall nginx"}
+{"input": "clear the screen", "output": "clear"}
+{"input": "list selinux booleans with descriptions", "output": "semanage boolean -l"}
+{"input": "how do I show a summary of virtual memory statistics", "output": "vmstat -s"}
+{"input": "show disk usage of each folder", "output": "du -sh */"}
+{"input": "search for all .py files in the current directory.", "output": "find . -name \"*.py\""}
+{"input": "displays detailed file status including timestamps and permissions.", "output": "stat file.txt"}
+{"input": "show last modified time of file", "output": "stat file.txt"}
+{"input": "show memory usage every 2 seconds", "output": "free -s 2"}
+{"input": "how do I list selinux port mappings", "output": "semanage port -l"}
+{"input": "recursively changes ownership of symlink and its target to user.", "output": "chown -hR user symlink"}
+{"input": "renames or moves oldname.txt to newname.txt.", "output": "mv oldname.txt newname.txt"}
+{"input": "how do I show directory tree structure", "output": "tree"}
+{"input": "set the append-only attribute on file.txt allowing only appending", "output": "chattr +a file.txt"}
+{"input": "debug bash script", "output": "bash -x script.sh"}
+{"input": "lists loaded ebpf programs.", "output": "bpftool prog list"}
+{"input": "checks the ext2/ext3/ext4 filesystem on /dev/sda1 without modifying it.", "output": "e2fsck -n /dev/sda1"}
+{"input": "how do I list information about ipc facilities shared memory semaphores queues", "output": "lsipc"}
+{"input": "show who is logged in", "output": "who"}
+{"input": "show unit file for the nginx service", "output": "systemctl cat nginx"}
+{"input": "how do I force kill the process with pid 1234", "output": "kill -9 1234"}
+{"input": "sets the maximum number of open file descriptors to 1024.", "output": "ulimit -n 1024"}
+{"input": "lists logged-in users with message status.", "output": "who -T"}
+{"input": "how do I show kernel routing table", "output": "netstat -r"}
+{"input": "show git log", "output": "git log --oneline"}
+{"input": "set file.txts timestamp to may 21 2025 1200", "output": "touch -t 202505211200 file.txt"}
+{"input": "how do I monitor network traffic on eth0 with a graphical interface", "output": "nload eth0"}
+{"input": "opens file.txt in vim with line numbers enabled.", "output": "vim -c 'set number' file.txt"}
+{"input": "sets the full name for user in the gecos field.", "output": "chfn -f 'Full Name' user"}
+{"input": "how do I create secure_dir with rwx permissions for owner only", "output": "mkdir -m 700 secure_dir"}
+{"input": "display the uuid of all disk partitions.", "output": "blkid"}
+{"input": "run script every 5 minutes", "output": "*/5 * * * * /path/to/script.sh"}
+{"input": "how do I show current user's username", "output": "whoami"}
+{"input": "runs netstat -tuln every 2 seconds highlighting changes.", "output": "watch -d 'netstat -tuln'"}
+{"input": "displays superblock information for the ext2/ext3/ext4 filesystem on /dev/sda1.", "output": "tune2fs -l /dev/sda1"}
+{"input": "how do I open config.conf in nano with 80-column line wrapping", "output": "nano -r 80 config.conf"}
+{"input": "displays memory usage in human-readable format.", "output": "free -h"}
+{"input": "run node application", "output": "node index.js"}
+{"input": "compile multiple cpp files", "output": "g++ file1.cpp file2.cpp -o output"}
+{"input": "list open ports", "output": "ss -tlnp"}
+{"input": "shows user and group ids for newuser.", "output": "id newuser"}
+{"input": "how do I show contents of logfile.txt", "output": "cat logfile.txt"}
+{"input": "run htop filtered to show only processes owned by user", "output": "htop -u user"}
+{"input": "shows dependencies for the nginx package on debian-based systems.", "output": "apt depends nginx"}
+{"input": "switches the current session to the specified group.", "output": "newgrp group"}
+{"input": "views largefile.txt with pagination.", "output": "less largefile.txt"}
+{"input": "reformats file.txt splitting long lines without joining short ones.", "output": "fmt -s file.txt"}
+{"input": "monitors error.log for new lines starting with no initial output.", "output": "tail -n 0 -f error.log"}
+{"input": "how do I list files in a single column", "output": "ls -1"}
+{"input": "displays configuration for the eth0 network interface.", "output": "ifconfig eth0"}
+{"input": "terminates the process with pid 1234 gracefully.", "output": "kill 1234"}
+{"input": "commit with message", "output": "git commit -m 'message'"}
+{"input": "run python one liner", "output": "python -c 'print(\"hello\")'"}
+{"input": "how do I list block devices with name size and type columns", "output": "lsblk -o NAME,SIZE,TYPE"}
+{"input": "sort by second column", "output": "sort -k2 file.txt"}
+{"input": "searches for nginx packages in debian-based repositories.", "output": "apt search nginx"}
+{"input": "displays the first 16 bytes of file.bin in hex and ascii.", "output": "hexdump -C -n 16 file.bin"}
+{"input": "displays the last 5 lines of access.log.", "output": "tail -n 5 access.log"}
+{"input": "changes the owner of file.txt to user.", "output": "chown user file.txt"}
+{"input": "grep in files found by find", "output": "find . -name '*.py' | xargs grep 'import'"}
+{"input": "show detailed processor information", "output": "dmidecode -t processor"}
+{"input": "list only the hidden files in the current folder.", "output": "ls -d .*"}
+{"input": "how do I print logical current directory preserving symlinks", "output": "pwd -L"}
+{"input": "clear terminal", "output": "clear"}
+{"input": "lists all selinux boolean settings.", "output": "getsebool -a"}
+{"input": "how do I show status and settings of the eth0 interface", "output": "ethtool eth0"}
+{"input": "lists dependencies of the nginx service.", "output": "systemctl list-dependencies nginx"}
+{"input": "run container interactively", "output": "docker run -it ubuntu:22.04 bash"}
+{"input": "flush the arp cache.", "output": "sudo ip neigh flush all"}
+{"input": "recursively changes ownership of /var/www to user and group.", "output": "chown -R user:group /var/www"}
+{"input": "delete the group oldgroup", "output": "groupdel oldgroup"}
+{"input": "read file one page at a time", "output": "more file.txt"}
+{"input": "count number of python files", "output": "find . -name '*.py' | wc -l"}
+{"input": "show last 50 lines of error.log", "output": "tail -n 50 error.log"}
+{"input": "run netstat -tuln every 2 seconds highlighting changes", "output": "watch -d 'netstat -tuln'"}
+{"input": "print file config.txt", "output": "cat config.txt"}
+{"input": "generate assembly code from main.c.", "output": "gcc -S main.c"}
+{"input": "deletes file.txt with interactive confirmation.", "output": "rm -i file.txt"}
+{"input": "show disk usage in human-readable format", "output": "df -h"}
+{"input": "traces library calls made by the process with pid 1234.", "output": "ltrace -p 1234"}
+{"input": "monitors logfile.txt in less similar to tail -f.", "output": "less +F logfile.txt"}
+{"input": "set the selinux user to system_u for file.txt", "output": "chcon -u system_u file.txt"}
+{"input": "show network interface duplex speed.", "output": "sudo ethtool eth0 | grep Duplex"}
+{"input": "how do I run top in batch mode for one iteration", "output": "top -b -n 1"}
+{"input": "kill process by name", "output": "pkill processname"}
+{"input": "change current directory to /usr/share", "output": "cd /usr/share"}
+{"input": "how do I show network protocol statistics", "output": "netstat -s"}
+{"input": "how do I open logfile.txt in less starting at the end", "output": "less +G logfile.txt"}
+{"input": "check connectivity using a 1000 byte packet.", "output": "ping -s 1000 8.8.8.8"}
+{"input": "show the amount of free and used memory in megabytes.", "output": "free -m"}
+{"input": "displays last login information for all users.", "output": "lastlog"}
+{"input": "show directory stack one entry per line", "output": "dirs -p"}
+{"input": "how do I show memory usage in human-readable format", "output": "free -h"}
+{"input": "how do I remove the empty directory empty_dir", "output": "rmdir empty_dir"}
+{"input": "creates a hard link file2.txt to file1.txt.", "output": "ln file1.txt file2.txt"}
+{"input": "run shell script", "output": "bash script.sh"}
+{"input": "read manual for grep", "output": "man grep"}
+{"input": "lists sockets with memory usage details.", "output": "ss -M"}
+{"input": "grants user read and write permissions on file.txt using acl.", "output": "setfacl -m u:user:rw file.txt"}
+{"input": "extract tar.gz file", "output": "tar -xzf archive.tar.gz"}
+{"input": "captures and saves tcp streams on port 80 via eth0.", "output": "tcpflow -i eth0 port 80"}
+{"input": "move 'lab_report.pdf' to the 'Documents' folder.", "output": "mv lab_report.pdf ~/Documents/"}
+{"input": "sends tcp probes to port 80 on 192.168.1.1 for network testing.", "output": "nping --tcp -p 80 192.168.1.1"}
+{"input": "show contents of compressed logfile.gz without uncompressing", "output": "zcat logfile.gz"}
+{"input": "generates one secure 16-character random password.", "output": "pwgen -s 16 1"}
+{"input": "download quietly with wget", "output": "wget -q https://example.com/file.zip"}
+{"input": "show command history", "output": "history"}
+{"input": "how do I show kernel messages with human-readable timestamps", "output": "dmesg -T"}
+{"input": "check /dev/sdb for bad blocks with verbose output", "output": "badblocks -v /dev/sdb"}
+{"input": "print last column of each line", "output": "awk '{print $NF}' file.txt"}
+{"input": "creates script.sh with input until eof is entered.", "output": "cat << EOF > script.sh"}
+{"input": "how do I create an empty file named newfile.txt or updates its timestamp", "output": "touch newfile.txt"}
+{"input": "how do I add /tmp to directory stack without changing current directory", "output": "pushd -n /tmp"}
+{"input": "kill process by id 1234", "output": "kill -9 1234"}
+{"input": "redirect both stdout and stderr", "output": "command > output.txt 2>&1"}
+{"input": "set a 1gb soft and 2gb hard disk quota for user on /mnt", "output": "xfs_quota -x -c 'limit bsoft=1g bhard=2g user' /mnt"}
+{"input": "how do I show contents of an xz-compressed file.txt.xz", "output": "xzcat file.txt.xz"}
+{"input": "set environment variable", "output": "export MY_VAR=value"}
+{"input": "displays detailed information about the python3 package on debian-based systems.", "output": "apt show python3"}
+{"input": "opens config.conf in nano creating backups on save.", "output": "nano -B config.conf"}
+{"input": "displays the last 100 bytes of error.log.", "output": "tail -c 100 error.log"}
+{"input": "list loaded ebpf maps", "output": "bpftool map list"}
+{"input": "compile cpp file", "output": "g++ main.cpp -o main"}
+{"input": "how do I show superblock information for the ext2/ext3/ext4 filesystem on /dev/sda1", "output": "tune2fs -l /dev/sda1"}
+{"input": "show trace data from the last trace-cmd record", "output": "trace-cmd report"}
+{"input": "attaches the gnu debugger to the process with pid 1234.", "output": "gdb --pid 1234"}
+{"input": "enables the eth0 network interface.", "output": "ifconfig eth0 up"}
+{"input": "resume a broken download using wget.", "output": "wget -c http://example.com/file.zip"}
+{"input": "show system uptime", "output": "uptime"}
+{"input": "show the history of all commands typed.", "output": "history"}
+{"input": "run java program", "output": "java Main"}
+{"input": "print specific line number", "output": "sed -n '10p' file.txt"}
+{"input": "search audit logs for login-related events", "output": "ausearch -m LOGIN"}
+{"input": "how do I show last login information for all users", "output": "lastlog"}
+{"input": "change group ownership of file.txt to group", "output": "chown :group file.txt"}
+{"input": "how do I list all files including hidden in long format", "output": "ls -la"}
+{"input": "how do I run htop with a tree view of processes", "output": "htop -t"}
+{"input": "how do I show script.sh with line numbers", "output": "cat -n script.sh"}
+{"input": "lists selinux login mappings.", "output": "semanage login -l"}
+{"input": "how do I show inode usage for filesystems", "output": "df -i"}
+{"input": "remove duplicate lines from file", "output": "sort file.txt | uniq"}
+{"input": "show a concise hardware summary", "output": "lshw -short"}
+{"input": "how do I show size of the current directory", "output": "du -sh ."}
+{"input": "runs command immune to hangups with output to nohup.out.", "output": "nohup command &"}
+{"input": "show full path of java", "output": "which java"}
+{"input": "list files with their inode numbers", "output": "ls -i"}
+{"input": "checks /dev/sdb for bad blocks with verbose output.", "output": "badblocks -v /dev/sdb"}
+{"input": "terminate all processes owned by user", "output": "pkill -u user"}
+{"input": "how do I show disk usage for the btrfs filesystem at /mnt", "output": "btrfs filesystem df /mnt"}
+{"input": "how do I copy file.txt to /backup only if newer or missing", "output": "cp -u file.txt /backup"}
+{"input": "check git status", "output": "git status"}
+{"input": "how do I open config.conf in nano without wrapping long lines", "output": "nano -w config.conf"}
+{"input": "count occurrences of each line", "output": "sort file.txt | uniq -c"}
+{"input": "show cpu usage for each core.", "output": "mpstat -P ALL"}
+{"input": "how do I view logfile.txt in less with verbose status", "output": "less -M logfile.txt"}
+{"input": "find word hello in file.txt", "output": "grep 'hello' file.txt"}
+{"input": "how do I show total size of /var/log in human-readable format", "output": "du -sh /var/log"}
+{"input": "calculates network details for the 192.168.1.0/24 subnet.", "output": "ipcalc 192.168.1.0/24"}
+{"input": "show user and group ids for the current user", "output": "id"}
+{"input": "show machine hardware architecture", "output": "uname -m"}
+{"input": "display only the first column of 'data.txt'.", "output": "awk '{print $1}' data.txt"}
+{"input": "how do I run htop filtered to show only processes owned by user", "output": "htop -u user"}
+{"input": "how do I set a user-defined extended attribute user.comment to test on file.txt", "output": "setfattr -n user.comment -v 'Test' file.txt"}
+{"input": "how do I list transaction history for dnf on fedora-based systems", "output": "dnf history list"}
+{"input": "install the apache web server on centos/rhel systems", "output": "yum install httpd"}
+{"input": "repairs an xfs filesystem on /dev/sda1.", "output": "xfs_repair /dev/sda1"}
+{"input": "copy file.txt to /backup preserving timestamps and permissions", "output": "cp -p file.txt /backup"}
+{"input": "search for the word 'Error' in all files in the current folder.", "output": "grep \"Error\" *"}
+{"input": "login to remote server", "output": "ssh user@server.com"}
+{"input": "returns to the previous directory.", "output": "cd -"}
+{"input": "how do I list files with their inode numbers", "output": "ls -i"}
+{"input": "dumps the system call table for audit purposes.", "output": "ausyscall --dump"}
+{"input": "how do I change to the shared memory filesystem directory", "output": "cd /dev/shm"}
+{"input": "open file1.txt and file2.txt in vim with a vertical split", "output": "vim -O file1.txt file2.txt"}
+{"input": "list all active network connections and ports", "output": "netstat -an"}
+{"input": "how do I show all but the last 5 lines of access.log", "output": "head -n -5 access.log"}
+{"input": "how do I show dependencies for the nginx package on debian-based systems", "output": "apt depends nginx"}
+{"input": "show disk usage for the btrfs filesystem at /mnt", "output": "btrfs filesystem df /mnt"}
+{"input": "check differences between two files", "output": "diff a.txt b.txt"}
+{"input": "sets up /dev/sdb1 as a swap partition.", "output": "mkswap /dev/sdb1"}
+{"input": "displays the selinux security context attribute of file.txt.", "output": "getfattr -n security.selinux file.txt"}
+{"input": "check python2 version", "output": "python --version"}
+{"input": "how do I list dependencies of the nginx service", "output": "systemctl list-dependencies nginx"}
+{"input": "copy script.sh to /usr/local/bin with 755 permissions", "output": "install -m 755 script.sh /usr/local/bin"}
+{"input": "unmount the directory /mnt/data.", "output": "sudo umount /mnt/data"}
+{"input": "list all files including hidden in long format", "output": "ls -la"}
+{"input": "how do I create a character device node /dev/mynode with major 1 minor 3", "output": "mknod /dev/mynode c 1 3"}
+{"input": "remove a container", "output": "docker rm mycontainer"}
+{"input": "moves file.txt to the /tmp directory.", "output": "mv file.txt /tmp"}
+{"input": "lists device mapper devices.", "output": "dmsetup ls"}
+{"input": "list selinux file context mappings", "output": "semanage fcontext -l"}
+{"input": "add a new user named 'guest'.", "output": "sudo adduser guest"}
+{"input": "opens file1.txt and file2.txt in vim with a vertical split.", "output": "vim -O file1.txt file2.txt"}
+{"input": "show only lines different between files", "output": "diff file1.txt file2.txt"}
+{"input": "show current authentication configuration", "output": "authconfig --test"}
+{"input": "runs htop with a tree view of processes.", "output": "htop -t"}
+{"input": "how do I view logfile.txt in less without wrapping long lines", "output": "less -S logfile.txt"}
+{"input": "open file.txt in the vim text editor", "output": "vim file.txt"}
+{"input": "show real-time bandwidth usage by connection on eth0", "output": "iftop -i eth0"}
+{"input": "set file.txt to read/write for owner only", "output": "chmod 600 file.txt"}
+{"input": "show system logs since the last boot", "output": "journalctl -b"}
+{"input": "recursively changes group ownership of /data to group.", "output": "chown -R :group /data"}
+{"input": "open config.conf in the nano text editor", "output": "nano config.conf"}
+{"input": "run java jar file", "output": "java -jar app.jar"}
+{"input": "list files", "output": "ls"}
+{"input": "how do I show last logged-in users", "output": "last"}
+{"input": "check the dns resolver configuration.", "output": "cat /etc/resolv.conf"}
+{"input": "dumps file.bin in octal format with ascii representation.", "output": "od -c file.bin"}
+{"input": "displays file.txt in reverse line order.", "output": "tac file.txt"}
+{"input": "creates a 100mb file.img filled with zeros.", "output": "dd if=/dev/zero of=file.img bs=1M count=100"}
+{"input": "lists memory ranges and their online status.", "output": "lsmem"}
+{"input": "show contents of an lzip-compressed file.txt.lz", "output": "lzcat file.txt.lz"}
+{"input": "give all permissions to owner", "output": "chmod 700 file.txt"}
+{"input": "run performance benchmarks for encryption algorithms", "output": "cryptsetup benchmark"}
+{"input": "how do I show selinux security context attribute of file.txt", "output": "getfattr -n security.selinux file.txt"}
+{"input": "schedules commands to run when system load is low.", "output": "batch"}
+{"input": "how do I show a list of recent user logins", "output": "last"}
+{"input": "show all system information kernel hostname etc", "output": "uname -a"}
+{"input": "find files modified in last 7 days", "output": "find . -mtime -7"}
+{"input": "verifies the integrity of password files.", "output": "pwck"}
+{"input": "show system boot log", "output": "journalctl -b"}
+{"input": "how do I view compressed logfile.gz with pagination", "output": "zless logfile.gz"}
+{"input": "open config.conf in nano creating backups on save", "output": "nano -B config.conf"}
+{"input": "set selinux context for /var/www to httpd_sys_content_t", "output": "chcon -t httpd_sys_content_t /var/www"}
+{"input": "show installation status and priority of nginx on debian-based systems", "output": "apt policy nginx"}
+{"input": "views compressed logfile.gz with pagination.", "output": "zless logfile.gz"}
+{"input": "displays the trace data from the last trace-cmd record.", "output": "trace-cmd report"}
+{"input": "displays a tree of processes with pids.", "output": "pstree -p"}
+{"input": "shows inode usage for filesystems.", "output": "df -i"}
+{"input": "send a post request with data using curl.", "output": "curl -d 'name=test' -X POST http://example.com"}
+{"input": "execute sh script with args", "output": "sh script.sh arg1"}
+{"input": "run node program", "output": "node program.js"}
+{"input": "where is the gcc binary", "output": "which gcc"}
+{"input": "how do I open file.bin in vim in binary mode", "output": "vim -b file.bin"}
+{"input": "how do I list system v message queues", "output": "ipcs -q"}
+{"input": "displays real-time bandwidth usage by connection on eth0.", "output": "iftop -i eth0"}
+{"input": "compile main.c with level 3 optimization for speed.", "output": "gcc -O3 main.c -o main"}
+{"input": "list processes with the command name nginx", "output": "ps -C nginx"}
+{"input": "how do I delete file.txt", "output": "rm file.txt"}
+{"input": "remove duplicate lines", "output": "sort file.txt | uniq"}
+{"input": "run sh with argument", "output": "sh deploy.sh production"}
+{"input": "how do I open file.txt in emacs non-interactively via lisp expression", "output": "emacs --eval '(find-file \"file.txt\")'"}
+{"input": "install python 3 on fedora-based systems", "output": "dnf install python3"}
+{"input": "lists pending jobs scheduled with at.", "output": "atq"}
+{"input": "creates a new group named newgroup.", "output": "groupadd newgroup"}
+{"input": "compile java and run it", "output": "javac Main.java && java Main"}
+{"input": "removes duplicate consecutive lines from file.txt.", "output": "uniq file.txt"}
+{"input": "how do I check for available package updates on centos/rhel systems", "output": "yum check-update"}
+{"input": "how do I run htop with a 0.5-second refresh interval", "output": "htop -d 5"}
+{"input": "extract first field from csv", "output": "cut -d',' -f1 file.csv"}
+{"input": "check where bash is", "output": "which bash"}
+{"input": "move file.txt to the /tmp directory", "output": "mv file.txt /tmp"}
+{"input": "displays detailed processor information.", "output": "dmidecode -t processor"}
+{"input": "list block devices with full device paths", "output": "lsblk -p"}
+{"input": "show i/o statistics in megabytes per second", "output": "iostat -m"}
+{"input": "open file.txt in emacs non-interactively via lisp expression", "output": "emacs --eval '(find-file \"file.txt\")'"}
+{"input": "delete folder old_stuff", "output": "rm -rf old_stuff"}
+{"input": "how do I list files in reverse order", "output": "ls -r"}
+{"input": "how do I show current authentication configuration", "output": "authconfig --test"}
+{"input": "compile c with math library", "output": "gcc main.c -o main -lm"}
+{"input": "how do I show extended i/o statistics every second for 3 iterations", "output": "iostat -x 1 3"}
+{"input": "how do I open file.txt in the emacs text editor", "output": "emacs file.txt"}
+{"input": "displays driver information for the eth0 interface.", "output": "ethtool -i eth0"}
+{"input": "locks the password for user disabling login.", "output": "passwd -l user"}
+{"input": "set up /dev/sdb1 as a swap partition", "output": "mkswap /dev/sdb1"}
+{"input": "show configuration for the eth0 network interface", "output": "ifconfig eth0"}
+{"input": "follow the system log in real-time.", "output": "tail -f /var/log/syslog"}
+{"input": "move file.txt to /tmp overwriting without prompting", "output": "mv -f file.txt /tmp"}
+{"input": "removes execute permission for the group on script.sh.", "output": "chmod g-x script.sh"}
+{"input": "how do I change owner of file.txt to user", "output": "chown user file.txt"}
+{"input": "how do I set the account expiration date for user to dec 31 2025", "output": "chage -E 2025-12-31 user"}
+{"input": "how do I show version control log for /etc managed by etckeeper", "output": "etckeeper vcs log"}
+{"input": "find most used commands in history", "output": "history | awk '{print $2}' | sort | uniq -c | sort -rn | head"}
+{"input": "terminate processes accessing /var/log/syslog", "output": "fuser -k /var/log/syslog"}
+{"input": "reverses the characters in each line of file.txt.", "output": "rev file.txt"}
+{"input": "how do I create newuser with a home directory and zsh as the default shell", "output": "useradd -m -s /bin/zsh newuser"}
+{"input": "list processes using port 80", "output": "lsof -i :80"}
+{"input": "display real-time system resource usage using top.", "output": "top"}
+{"input": "lists system v message queues.", "output": "ipcs -q"}
+{"input": "list all branches", "output": "git branch -a"}
+{"input": "download file silently", "output": "wget -q https://example.com/file"}
+{"input": "how do I list selinux login mappings", "output": "semanage login -l"}
+{"input": "recursively grants user read and execute permissions on /data using acl.", "output": "setfacl -R -m u:user:rx /data"}
+{"input": "remove the 'vim' package but keep configuration files.", "output": "sudo apt remove vim"}
+{"input": "joins all lines of file.txt into a single line with tabs.", "output": "paste -s file.txt"}
+{"input": "how do I change login shell for user to zsh", "output": "chsh -s /bin/zsh user"}
+{"input": "lists partition tables for all disks.", "output": "parted -l"}
+{"input": "how do I remove all acl entries from file.txt restoring default permissions", "output": "setfacl -b file.txt"}
+{"input": "check the sha256 hash of 'image.iso'.", "output": "sha256sum image.iso"}
+{"input": "show bash version", "output": "bash --version"}
+{"input": "how do I show first 5 lines of access.log", "output": "head -n 5 access.log"}
+{"input": "how do I run command immune to hangups with output to nohup.out", "output": "nohup command &"}
+{"input": "sort file alphabetically", "output": "sort file.txt"}
+{"input": "list partition tables for all disks", "output": "parted -l"}
+{"input": "show cpu architecture information", "output": "lscpu"}
+{"input": "how do I show bridge interfaces and their states", "output": "bridge link show"}
+{"input": "show last 100 bytes of error.log", "output": "tail -c 100 error.log"}
+{"input": "show failed systemd services.", "output": "systemctl --failed"}
+{"input": "copy folder src to dst", "output": "cp -r src dst"}
+{"input": "converts passwd entries to use shadow passwords.", "output": "pwconv"}
+{"input": "monitors bandwidth usage on eth0 interactively.", "output": "bmon -i eth0"}
+{"input": "remove repeated lines", "output": "sort file.txt | uniq"}
+{"input": "list mounted ext4 filesystems with details", "output": "findmnt -t ext4"}
+{"input": "show routing table using the ip command", "output": "ip route show"}
+{"input": "copy remote file to local", "output": "scp user@host:/remote/file.txt ."}
+{"input": "lists control groups in the system.", "output": "lscgroup"}
+{"input": "add newuser to the sudo group", "output": "usermod -aG sudo newuser"}
+{"input": "reset terminal display", "output": "clear"}
+{"input": "run compiled java class", "output": "java HelloWorld"}
+{"input": "sum values in column 1", "output": "awk '{sum += $1} END {print sum}' file.txt"}
+{"input": "how do I send icmp echo requests to googles public dns server", "output": "ping 8.8.8.8"}
+{"input": "displays file.txt with tabs shown as i.", "output": "cat -t file.txt"}
+{"input": "combines ping and traceroute to monitor network performance to google.com.", "output": "mtr google.com"}
+{"input": "replace all occurrences of 'apple' with 'orange' in 'fruit.txt'.", "output": "sed 's/apple/orange/g' fruit.txt"}
+{"input": "changes to the /proc directory of the current shell process.", "output": "cd /proc/$$"}
+{"input": "find path of python3", "output": "which python3"}
+{"input": "find files larger than 100mb", "output": "find . -size +100M"}
+{"input": "how do I show i/o statistics in megabytes per second", "output": "iostat -m"}
+{"input": "show virtual memory statistics.", "output": "vmstat 1"}
+{"input": "lists scsi devices and their attributes.", "output": "lsscsi"}
+{"input": "show total memory usage including swap", "output": "free -t"}
+{"input": "runs performance benchmarks for encryption algorithms.", "output": "cryptsetup benchmark"}
+{"input": "displays the arp table with neighbor entries.", "output": "ip neighbor show"}
+{"input": "how do I open file.bin in an interactive hexadecimal editor", "output": "hexedit file.bin"}
+{"input": "displays logs for the nginx service.", "output": "journalctl -u nginx"}
+{"input": "clean the build using a makefile rule.", "output": "make clean"}
+{"input": "move file.txt to /tmp without overwriting existing files", "output": "mv -n file.txt /tmp"}
+{"input": "how do I run top for one iteration and exits", "output": "top -n 1"}
+{"input": "zip a file", "output": "zip archive.zip file.txt"}
+{"input": "converts tabs to spaces in file.txt.", "output": "expand file.txt"}
+{"input": "reload bash config", "output": "source ~/.bashrc"}
+{"input": "displays the arp cache without resolving hostnames.", "output": "arp -n"}
+{"input": "list cron jobs for user", "output": "crontab -u user -l"}
+{"input": "extract first column from csv", "output": "cut -d',' -f1 file.csv"}
+{"input": "change priority of process with pid 1234 to 5", "output": "renice 5 1234"}
+{"input": "downloads the source code for the nginx package on debian-based systems.", "output": "apt source nginx"}
+{"input": "displays the hardware platform.", "output": "uname -i"}
+{"input": "how do I show current shell being used", "output": "echo $SHELL"}
+{"input": "export database url", "output": "export DATABASE_URL=postgres://localhost/db"}
+{"input": "shows log messages with priority 3 errors since the last boot.", "output": "journalctl -p 3 -b"}
+{"input": "captures packets on the eth0 interface.", "output": "tcpdump -i eth0"}
+{"input": "how do I show calendar for the current month", "output": "cal"}
+{"input": "how do I show file.txt with tabs shown as i", "output": "cat -t file.txt"}
+{"input": "how do I list processes accessing /var/log/syslog", "output": "fuser -v /var/log/syslog"}
+{"input": "show sudo group entry from the group database", "output": "getent group sudo"}
+{"input": "show error.log starting from the second line", "output": "tail -n +2 error.log"}
+{"input": "execute javascript with node", "output": "node main.js"}
+{"input": "how do I show configuration for the eth0 network interface", "output": "ifconfig eth0"}
+{"input": "list pending jobs scheduled with at", "output": "atq"}
+{"input": "finds setuid files on the root filesystem ignoring other mounts.", "output": "find / -xdev -perm /u+s"}
+{"input": "show ip address of eth0 interface", "output": "ip addr show eth0"}
+{"input": "updates the access time of file.txt.", "output": "touch -a file.txt"}
+{"input": "returns to the directory at the top of the stack.", "output": "popd"}
+{"input": "recursively sets the undelete attribute on /backup for data recovery.", "output": "chattr -R +u /backup"}
+{"input": "list all installed packages on fedora-based systems", "output": "dnf repoquery --installed"}
+{"input": "create a group named newgroup with gid 2000", "output": "addgroup --gid 2000 newgroup"}
+{"input": "display shared library dependencies of an executable.", "output": "ldd ./myapp"}
+{"input": "copies script.sh to /usr/local/bin with 755 permissions.", "output": "install -m 755 script.sh /usr/local/bin"}
+{"input": "copies file.txt to the /backup directory.", "output": "cp file.txt /backup"}
+{"input": "delete testuser and their home directory", "output": "userdel -r testuser"}
+{"input": "how do I show disk usage for ext4 filesystems only", "output": "df -t ext4"}
+{"input": "copies file.txt to /backup with verbose output.", "output": "cp -v file.txt /backup"}
+{"input": "compare two files 'file1.txt' and 'file2.txt'.", "output": "diff file1.txt file2.txt"}
+{"input": "show a summary of virtual memory statistics", "output": "vmstat -s"}
+{"input": "how do I run date every second updating the output", "output": "watch -n 1 'date'"}
+{"input": "how do I show cpu information in json format", "output": "lscpu -J"}
+{"input": "show disk usage with filesystem types", "output": "df -T"}
+{"input": "how do I create a group named newgroup with gid 2000", "output": "addgroup --gid 2000 newgroup"}
+{"input": "open config.conf in nano converting tabs to spaces", "output": "nano -E config.conf"}
+{"input": "execute python file", "output": "python main.py"}
+{"input": "lists all files including hidden in long format.", "output": "ls -la"}
+{"input": "lists block devices with filesystem types and uuids.", "output": "lsblk -f"}
+{"input": "filters file.txt to remove backspaces and their preceding characters.", "output": "col -b < file.txt"}
+{"input": "print second column of file", "output": "awk '{print $2}' file.txt"}
+{"input": "how do I open file.txt in the vim text editor", "output": "vim file.txt"}
+{"input": "how do I monitor /var/log for filesystem events", "output": "inotifywait -m /var/log"}
+{"input": "how do I remove read permission for others on file.txt", "output": "chmod o-r file.txt"}
+{"input": "set a user-defined extended attribute user.comment to test on file.txt", "output": "setfattr -n user.comment -v 'Test' file.txt"}
+{"input": "run command immune to hangups with output to nohup.out", "output": "nohup command &"}
+{"input": "list all usb devices.", "output": "lsusb"}
+{"input": "show kernel version and name", "output": "uname -snr"}
+{"input": "how do I set the full name for user in the gecos field", "output": "chfn -f 'Full Name' user"}
+{"input": "show a specific environmental variable named PATH.", "output": "echo $PATH"}
+{"input": "view the kernel buffer log.", "output": "dmesg"}
+{"input": "show detailed memory hardware information", "output": "dmidecode -t memory"}
+{"input": "download file with curl", "output": "curl -O https://example.com/file.zip"}
+{"input": "how do I list device mapper devices", "output": "dmsetup ls"}
+{"input": "mount a drive /dev/sdb1 to /mnt/data.", "output": "sudo mount /dev/sdb1 /mnt/data"}
+{"input": "sort the lines in 'names.txt' alphabetically.", "output": "sort names.txt"}
+{"input": "list processes with open tcp listening sockets", "output": "lsof -iTCP -sTCP:LISTEN"}
+{"input": "list logged-in users with message status", "output": "who -T"}
+{"input": "sets a user-defined extended attribute user.comment to test on file.txt.", "output": "setfattr -n user.comment -v 'Test' file.txt"}
+{"input": "lists currently logged-in users.", "output": "who"}
+{"input": "show listening tcp ports with associated process names.", "output": "ss -ltp"}
+{"input": "sets the gecos comment field for user to full name.", "output": "usermod -c 'Full Name' user"}
+{"input": "upgrades installed packages to their latest versions on debian-based systems.", "output": "apt upgrade"}
+{"input": "show the kernel version information.", "output": "uname -a"}
+{"input": "create script.sh with input until eof is entered", "output": "cat << EOF > script.sh"}
+{"input": "list block devices and their mount points", "output": "lsblk"}
+{"input": "show top 10 largest files in current directory", "output": "du -sh * | sort -hr | head -n 10"}
+{"input": "update package lists and upgrades packages on fedora-based systems", "output": "dnf update"}
+{"input": "show disk usage for all mounted filesystems.", "output": "df -h"}
+{"input": "opens file.bin in vim in binary mode.", "output": "vim -b file.bin"}
+{"input": "how do I show bash version", "output": "bash --version"}
+{"input": "show file.txt with non-printable characters visible", "output": "cat -v file.txt"}
+{"input": "queries dns for google.coms ip address.", "output": "nslookup google.com"}
+{"input": "change current directory to /tmp", "output": "cd /tmp"}
+{"input": "how do I show current users username", "output": "whoami"}
+{"input": "change login shell for user to zsh", "output": "chsh -s /bin/zsh user"}
+{"input": "performs a detailed dns lookup for google.com.", "output": "dig google.com"}
+{"input": "scans open ports on localhost.", "output": "nmap localhost"}
+{"input": "see what changed in files", "output": "git diff"}
+{"input": "run a python file", "output": "python3 main.py"}
+{"input": "recursively copies dir1 to dir2.", "output": "cp -r dir1 dir2"}
+{"input": "how do I show detailed processor information", "output": "dmidecode -t processor"}
+{"input": "how do I open config.conf in the nano text editor", "output": "nano config.conf"}
+{"input": "displays network interface addresses in json format.", "output": "ip -j addr"}
+{"input": "views compressed logfile.gz with pagination similar to more.", "output": "zmore logfile.gz"}
+{"input": "show file differences side by side", "output": "diff -y a.txt b.txt"}
+{"input": "shows disk usage for the root filesystem.", "output": "df /"}
+{"input": "how do I send 4 icmp echo requests to google.com to check connectivity", "output": "ping -c 4 google.com"}
+{"input": "create hard link", "output": "ln file.txt hardlink.txt"}
+{"input": "how do I run ip addr command within the ns1 network namespace", "output": "ip netns exec ns1 ip addr"}
+{"input": "show bios information", "output": "dmidecode -t bios"}
+{"input": "how do I change to the physical directory resolved from /path/to/symlink", "output": "cd -P /path/to/symlink"}
+{"input": "how do I list dependencies for the httpd package on centos/rhel", "output": "yum deplist httpd"}
+{"input": "displays bios information.", "output": "dmidecode -t bios"}
+{"input": "change owner of file.txt to user with verbose output", "output": "chown -v user file.txt"}
+{"input": "how do I terminate all processes owned by user", "output": "pkill -u user"}
+{"input": "run last command as sudo", "output": "sudo !!"}
+{"input": "changes the current directory to /tmp.", "output": "cd /tmp"}
+{"input": "check the status of the 'ssh' service.", "output": "systemctl status ssh"}
+{"input": "views logfile.txt in less treating backspaces as non-destructive.", "output": "less -u logfile.txt"}
+{"input": "list information about ipc facilities shared memory semaphores queues", "output": "lsipc"}
+{"input": "removes cached data and metadata on fedora-based systems.", "output": "dnf clean all"}
+{"input": "how do I list mounted filesystems with disk usage details", "output": "findmnt -D"}
+{"input": "how do I update the access time of file.txt", "output": "touch -a file.txt"}
+{"input": "lists block devices and their mount points.", "output": "lsblk"}
+{"input": "how do I view logfile.txt with line numbers", "output": "less -N logfile.txt"}
+{"input": "how do I show memory usage with wide format", "output": "free -w"}
+{"input": "push to remote origin", "output": "git push origin main"}
+{"input": "how do I show network interface configuration", "output": "ifconfig"}
+{"input": "test connectivity to google", "output": "ping -c 4 google.com"}
+{"input": "change to the physical directory resolved from /path/to/symlink", "output": "cd -P /path/to/symlink"}
+{"input": "list system v semaphore arrays", "output": "ipcs -s"}
+{"input": "displays system uptime and load averages.", "output": "uptime"}
+{"input": "connect to server via ssh", "output": "ssh user@192.168.1.1"}
+{"input": "move file.txt to /tmp creating a backup if it exists", "output": "mv -b file.txt /tmp"}
+{"input": "show selinux security context attribute of file.txt", "output": "getfattr -n security.selinux file.txt"}
+{"input": "how do I show lines in file.txt starting with word", "output": "look word file.txt"}
+{"input": "show all but the last 5 lines of access.log", "output": "head -n -5 access.log"}
+{"input": "show current run-level of the system", "output": "who -r"}
+{"input": "move file.txt to /tmp with interactive prompt for overwrite", "output": "mv -i file.txt /tmp"}
+{"input": "change the permissions of 'script.sh' to be executable.", "output": "chmod +x script.sh"}
+{"input": "lists loaded ebpf maps.", "output": "bpftool map list"}
+{"input": "how do I open config.conf in nano with line numbers", "output": "nano -l config.conf"}
+{"input": "compile and run c program", "output": "gcc main.c -o main && ./main"}
+{"input": "open config.conf in nano with constant cursor position display", "output": "nano -c config.conf"}
+{"input": "traces both library and system calls for the process with pid 1234.", "output": "ltrace -S -p 1234"}
+{"input": "delete the folder 'temp_data' and everything inside it.", "output": "rm -rf temp_data"}
+{"input": "changes the current directory to /var/log.", "output": "cd /var/log"}
+{"input": "list all aliases", "output": "alias"}
+{"input": "run container in background", "output": "docker run -d nginx"}
+{"input": "pull latest changes", "output": "git pull"}
+{"input": "displays superblock and block group information for /dev/sda1.", "output": "dumpe2fs -h /dev/sda1"}
+{"input": "update package lists for upgrades on debian-based systems", "output": "apt update"}
+{"input": "how do I send icmp echo requests to google.com with 100-byte packets", "output": "ping -s 100 google.com"}
+{"input": "how do I remove execute permission for the group on script.sh", "output": "chmod g-x script.sh"}
+{"input": "captures 10 packets on eth0 using wiresharks terminal interface.", "output": "tshark -i eth0 -c 10"}
+{"input": "forces log rotation based on /etc/logrotate.conf.", "output": "logrotate -f /etc/logrotate.conf"}
+{"input": "remove columns 1 through 5 from file.txt", "output": "colrm 1 5 < file.txt"}
+{"input": "run make with 4 jobs in parallel", "output": "make -j4"}
+{"input": "traces system calls made by the process with pid 1234.", "output": "strace -p 1234"}
+{"input": "creates a btrfs filesystem on /dev/sdb1.", "output": "mkfs.btrfs /dev/sdb1"}
+{"input": "how do I show user and group ids for newuser", "output": "id newuser"}
+{"input": "change current directory to /etc", "output": "cd /etc"}
+{"input": "splits largefile.txt into 1mb chunks.", "output": "split -b 1M largefile.txt"}
+{"input": "clean build files", "output": "make clean"}
+{"input": "force kill all nginx processes", "output": "pkill -9 nginx"}
+{"input": "find all directories", "output": "find . -type d"}
+{"input": "commits changes in /etc with the message updated config.", "output": "etckeeper commit 'Updated config'"}
+{"input": "delete lines containing word", "output": "sed -i '/word/d' file.txt"}
+{"input": "run makefile", "output": "make"}
+{"input": "show all files including hidden", "output": "ls -la"}
+{"input": "lists current audit rules for system monitoring.", "output": "auditctl -l"}
+{"input": "run ip addr command within the ns1 network namespace", "output": "ip netns exec ns1 ip addr"}
+{"input": "show multicast routing table", "output": "ip mroute show"}
+{"input": "count occurrences of each unique line", "output": "uniq -c file.txt"}
+{"input": "read manual page for find", "output": "man find"}
+{"input": "remove the scheduled job with id 1 from the at queue", "output": "atrm 1"}
+{"input": "compile main.c with math library linking.", "output": "gcc main.c -o main -lm"}
+{"input": "restart the 'apache2' service.", "output": "sudo systemctl restart apache2"}
+{"input": "show contents of a zstandard-compressed file.txt.zst", "output": "zstdcat file.txt.zst"}
+{"input": "open file1.txt and file2.txt in vim with a horizontal split", "output": "vim -o file1.txt file2.txt"}
+{"input": "lists network namespaces.", "output": "ip netns list"}
+{"input": "show numa node information", "output": "numactl --hardware"}
+{"input": "create an empty file named 'touchfile'.", "output": "touch touchfile"}
+{"input": "follow log file in real time", "output": "tail -f app.log"}
+{"input": "copy file.txt to /backup only if newer or missing", "output": "cp -u file.txt /backup"}
+{"input": "runs htop filtered to show only processes owned by user.", "output": "htop -u user"}
+{"input": "displays file.txt with non-blank lines numbered.", "output": "cat -b file.txt"}
+{"input": "compile main.c and treat all warnings as errors.", "output": "gcc -Werror main.c -o main"}
+{"input": "list partitions on /dev/sda with size and type", "output": "partx -s /dev/sda"}
+{"input": "create newuser with a home directory and zsh as the default shell", "output": "useradd -m -s /bin/zsh newuser"}
+{"input": "show files recursively", "output": "ls -R"}
+{"input": "how do I change password for newuser", "output": "passwd newuser"}
+{"input": "converts 4-space sequences to tabs in file.txt.", "output": "unexpand -t 4 file.txt"}
+{"input": "how do I show contents of 'readme.md' in the terminal", "output": "cat readme.md"}
+{"input": "convert lowercase to uppercase", "output": "tr '[:lower:]' '[:upper:]' < file.txt"}
+{"input": "how do I create a btrfs subvolume at /mnt/subvol", "output": "btrfs subvolume create /mnt/subvol"}
+{"input": "performs a topological sort on the input from file.txt.", "output": "tsort file.txt"}
+{"input": "how do I show all system information kernel hostname etc", "output": "uname -a"}
+{"input": "displays the first 100 bytes of file.txt.", "output": "head -c 100 file.txt"}
+{"input": "flushes filesystem buffers to disk.", "output": "sync"}
+{"input": "sets file.txt to read/write for owner read-only for others.", "output": "chmod 644 file.txt"}
+{"input": "displays performance analysis from the last perf record.", "output": "perf report"}
+{"input": "how do I list pids of processes named nginx", "output": "pgrep nginx"}
+{"input": "displays information about the process with pid 1234.", "output": "ps -p 1234"}
+{"input": "show network configuration of all interfaces", "output": "ifconfig -a"}
+{"input": "list available package groups on fedora-based systems", "output": "dnf group list"}
+{"input": "find all empty directories in the current path.", "output": "find . -type d -empty"}
+{"input": "shows disk usage for ext4 filesystems only.", "output": "df -t ext4"}
+{"input": "how do I monitor cpu disk network and system activity in real-time", "output": "dstat -cdngy"}
+{"input": "show help for a command", "output": "man command"}
+{"input": "how do I set the secure deletion attribute on file.txt zeroing data on delete", "output": "chattr +s file.txt"}
+{"input": "how do I delete file.txt with interactive confirmation", "output": "rm -i file.txt"}
+{"input": "set the maximum number of open file descriptors to 1024", "output": "ulimit -n 1024"}
+{"input": "how do I update package lists for upgrades on debian-based systems", "output": "apt update"}
+{"input": "how do I show all active nftables firewall rules", "output": "nft list ruleset"}
+{"input": "show uuid of all disk partitions", "output": "blkid"}
+{"input": "create a symbolic link link.txt to file1.txt", "output": "cp -s file1.txt link.txt"}
+{"input": "how do I show details of transaction id 1 in yum history on centos/rhel", "output": "yum history info 1"}
+{"input": "list all alias definitions.", "output": "alias"}
+{"input": "how do I show failed login attempts for user", "output": "faillog -u user"}
+{"input": "create a directory named newdir", "output": "mkdir newdir"}
+{"input": "how do I move up one directory level", "output": "cd .."}
+{"input": "show real-time system resource usage using top", "output": "top"}
+{"input": "show tree including hidden files", "output": "tree -a"}
+{"input": "views logfile.txt in less with verbose status.", "output": "less -M logfile.txt"}
+{"input": "open file.bin in vim in binary mode", "output": "vim -b file.bin"}
+{"input": "sort file in reverse order", "output": "sort -r file.txt"}
+{"input": "displays the first 10 lines of access.log with a file header.", "output": "head -v access.log"}
+{"input": "connect to a remote server using a specific private key.", "output": "ssh -i keyfile.pem user@remote_host"}
+{"input": "count characters in file", "output": "wc -c file.txt"}
+{"input": "formats file.txt for printing without headers or footers.", "output": "pr -t file.txt"}
+{"input": "change to /var/log and adds current directory to stack", "output": "pushd /var/log"}
+{"input": "make script executable and run it", "output": "chmod +x script.sh && ./script.sh"}
+{"input": "lists block devices with name size and type columns.", "output": "lsblk -o NAME,SIZE,TYPE"}
+{"input": "rename 'old.txt' to 'new.txt'.", "output": "mv old.txt new.txt"}
+{"input": "show hostname", "output": "hostname"}
+{"input": "list ipsec security associations", "output": "ip xfrm state"}
+{"input": "create folder test", "output": "mkdir test"}
+{"input": "how do I show memory usage in bytes", "output": "free -b"}
+{"input": "grep with regex for ip addresses", "output": "grep -E '[0-9]+\\.[0-9]+\\.[0-9]+\\.[0-9]+' file.txt"}
+{"input": "create a hexadecimal dump of file.bin", "output": "xxd file.bin"}
+{"input": "show xfs filesystem geometry for /dev/sda1", "output": "xfs_info /dev/sda1"}
+{"input": "removes columns 1 through 5 from file.txt.", "output": "colrm 1 5 < file.txt"}
+{"input": "locate a file named 'config.yaml' in the system.", "output": "locate config.yaml"}
+{"input": "captures and displays http packets on port 80.", "output": "ngrep -q 'HTTP' port 80"}
+{"input": "compresses file.txt using lzip compression.", "output": "lzip -z file.txt"}
+{"input": "list block devices with uuids and filesystem types", "output": "blkid -o list"}
+{"input": "strip debugging symbols from an executable.", "output": "strip ./myapp"}
+{"input": "compares two compressed files without decompressing.", "output": "zcmp file1.gz file2.gz"}
+{"input": "show value of variable", "output": "echo $MY_VAR"}
+{"input": "counts the number of bytes in file.txt.", "output": "wc -c file.txt"}
+{"input": "show all active nftables firewall rules", "output": "nft list ruleset"}
+{"input": "adds tcp port 8080 to selinux http_port_t for web services.", "output": "semanage port -a -t http_port_t -p tcp 8080"}
+{"input": "send 2 icmp echo requests to the ip 192.168.1.1", "output": "ping -c 2 192.168.1.1"}
+{"input": "reads from stdin and writes to file.txt and stdout.", "output": "tee file.txt"}
+{"input": "list all processes with full details", "output": "ps -ef"}
+{"input": "disable the 'bluetooth' service.", "output": "sudo systemctl disable bluetooth"}
+{"input": "show network interface statistics", "output": "netstat -i"}
+{"input": "run python with module flag", "output": "python -m http.server"}
+{"input": "create alias for command", "output": "alias ll='ls -la'"}
+{"input": "run htop with a 0.5-second refresh interval", "output": "htop -d 5"}
+{"input": "display file contents page by page", "output": "more output.txt"}
+{"input": "how do I add ip 192.168.1.100 to the ip set myset", "output": "ipset add myset 192.168.1.100"}
+{"input": "lists available package groups on fedora-based systems.", "output": "dnf group list"}
+{"input": "how do I show policy routing rules", "output": "ip rule show"}
+{"input": "lists open files for the process with pid 1234.", "output": "lsof -p 1234"}
+{"input": "print current working directory", "output": "pwd"}
+{"input": "search running processes for python", "output": "ps aux | grep python"}
+{"input": "how do I list selinux file context mappings", "output": "semanage fcontext -l"}
+{"input": "upgrade all installed packages to their latest versions.", "output": "sudo apt upgrade"}
+{"input": "how do I show user and group ids for the current user", "output": "id"}
+{"input": "securely copy a local file to a remote server.", "output": "scp file.txt user@remote_host:/path/"}
+{"input": "show folder structure", "output": "tree"}
+{"input": "update the shared library cache.", "output": "sudo ldconfig"}
+{"input": "what's in this folder", "output": "ls"}
+{"input": "show systems hostname", "output": "uname -n"}
+{"input": "how do I remove the scheduled job with id 1 from the at queue", "output": "atrm 1"}
+{"input": "how do I show contents of a zstandard-compressed file.txt.zst", "output": "zstdcat file.txt.zst"}
+{"input": "show first 3 lines of file1.txt and file2.txt with headers", "output": "head -n 3 file1.txt file2.txt"}
+{"input": "change current directory to /var/log", "output": "cd /var/log"}
+{"input": "makes script.sh executable by adding execute permission.", "output": "chmod +x script.sh"}
+{"input": "change to the home directory of user", "output": "cd ~user"}
+{"input": "view large file page by page", "output": "less largefile.txt"}
+{"input": "how do I list block devices in json format", "output": "lsblk -J"}
+{"input": "how do I show detailed information about logged-in users", "output": "w"}
+{"input": "moves up one directory level.", "output": "cd .."}
+{"input": "run java program with arguments", "output": "java Main arg1 arg2"}
+{"input": "how do I show passwd database entry for user", "output": "getent passwd user"}
+{"input": "show detailed statistics for the eth0 interface", "output": "ethtool -S eth0"}
+{"input": "show file.txt with tabs shown as i", "output": "cat -t file.txt"}
+{"input": "show differences between two compressed files", "output": "zdiff file1.gz file2.gz"}
+{"input": "how do I list file locks held by processes", "output": "lslocks"}
+{"input": "extract zip to folder", "output": "unzip file.zip -d extracted/"}
+{"input": "how do I open config.conf in nano creating backups on save", "output": "nano -B config.conf"}
+{"input": "how do I show current run-level of the system", "output": "who -r"}
+{"input": "how do I list cron jobs for user", "output": "crontab -u user -l"}
+{"input": "how do I show log messages with priority 3 errors since the last boot", "output": "journalctl -p 3 -b"}
+{"input": "view largefile.txt with pagination", "output": "less largefile.txt"}
+{"input": "unzip to specific folder", "output": "unzip archive.zip -d /target/"}
+{"input": "displays numa node information.", "output": "numactl --hardware"}
+{"input": "enable the ufw firewall.", "output": "sudo ufw enable"}
+{"input": "list loaded kernel modules", "output": "lsmod"}
+{"input": "how do I show last 5 lines of access.log", "output": "tail -n 5 access.log"}
+{"input": "remove the empty directory empty_dir", "output": "rmdir empty_dir"}
+{"input": "how do I view compressed logfile.gz with pagination similar to more", "output": "zmore logfile.gz"}
+{"input": "displays the sudo group entry from the group database.", "output": "getent group sudo"}
+{"input": "views logfile.txt with line numbers.", "output": "less -N logfile.txt"}
+{"input": "how do I run command with a 10-second timeout", "output": "timeout 10s command"}
+{"input": "displays current authentication configuration.", "output": "authconfig --test"}
+{"input": "rotates the directory stack to make the third entry the current directory.", "output": "pushd +2"}
+{"input": "how do I list available modules on fedora-based systems", "output": "dnf module list"}
+{"input": "lists dependencies required by the python3 package on fedora-based systems.", "output": "dnf repoquery --requires python3"}
+{"input": "compress the 'images' folder into a zip file.", "output": "zip -r images.zip images/"}
+{"input": "search for lines not matching pattern", "output": "grep -v 'pattern' file.txt"}
+{"input": "monitor filesystem access events in real-time", "output": "fatrace"}
+{"input": "lists network interfaces and their status.", "output": "ip link show"}
+{"input": "zip files together", "output": "zip bundle.zip *.txt"}
+{"input": "compile and run java", "output": "javac Main.java && java Main"}
+{"input": "how do I show last 10 lines of error.log", "output": "tail -n 10 error.log"}
+{"input": "compile multiple files main.c and utils.c into an executable.", "output": "gcc main.c utils.c -o myapp"}
+{"input": "show bridge interfaces and their states", "output": "bridge link show"}
+{"input": "send tcp syn packets to 192.168.1.1 for network probing", "output": "hping3 -S 192.168.1.1"}
+{"input": "query the mx record of a domain.", "output": "dig google.com MX"}
+{"input": "lists all processes with full details.", "output": "ps -ef"}
+{"input": "copy the folder 'project_v1' to 'project_v2' recursively.", "output": "cp -r project_v1 project_v2"}
+{"input": "lists files in long format with human-readable sizes.", "output": "ls -lh"}
+{"input": "send json with curl", "output": "curl -X POST -H 'Content-Type: application/json' -d '{\"key\":\"val\"}' https://api.example.com"}
+{"input": "establishes an ssl connection to 192.168.1.1 on port 443.", "output": "ncat --ssl 192.168.1.1 443"}
+{"input": "how do I terminate all nginx processes", "output": "killall nginx"}
+{"input": "how do I move dir1 to /archive only if newer or missing", "output": "mv -u dir1 /archive"}
+{"input": "overwrite 'config.txt' with the text 'v1.0'.", "output": "echo \"v1.0\" > config.txt"}
+{"input": "recursively sets /data to rwx for owner rx for group none for others.", "output": "chmod -R 750 /data"}
+{"input": "connect to remote host", "output": "ssh user@remotehost"}
+{"input": "how do I show ip addresses and interface details", "output": "ip addr show"}
+{"input": "clone a repository", "output": "git clone https://github.com/user/repo.git"}
+{"input": "list all containers including stopped", "output": "docker ps -a"}
+{"input": "display the system's hostname.", "output": "hostname"}
+{"input": "updates package lists for upgrades on debian-based systems.", "output": "apt update"}
+{"input": "displays metadata for the luks partition on /dev/sdb1.", "output": "cryptsetup luksDump /dev/sdb1"}
+{"input": "how do I show cpu information in a tabular format", "output": "lscpu -e"}
+{"input": "show only duplicate lines", "output": "sort file.txt | uniq -d"}
+{"input": "add a default gateway.", "output": "sudo ip route add default via 192.168.1.1"}
+{"input": "send post request with curl", "output": "curl -X POST -d 'data' https://api.example.com"}
+{"input": "appends stdin to file.txt and outputs to stdout.", "output": "tee -a file.txt"}
+{"input": "open config.conf in nano with line numbers", "output": "nano -l config.conf"}
+{"input": "list all users currently logged into the system.", "output": "who"}
+{"input": "set the account expiration date for user to dec 31 2025", "output": "chage -E 2025-12-31 user"}
+{"input": "show detailed file status including timestamps and permissions", "output": "stat file.txt"}
+{"input": "check the ext2/ext3/ext4 filesystem on /dev/sda1 without modifying it", "output": "e2fsck -n /dev/sda1"}
+{"input": "how do I list memory ranges and their online status", "output": "lsmem"}
+{"input": "open an encrypted luks device /dev/sdb1 as crypt", "output": "cryptsetup luksOpen /dev/sdb1 crypt"}
+{"input": "how do I show current system load and uptime", "output": "uptime"}
+{"input": "view compressed logfile.gz with pagination", "output": "zless logfile.gz"}
+{"input": "open manual for ls", "output": "man ls"}
+{"input": "export variable for session", "output": "export PATH=$PATH:/new/path"}
+{"input": "show time of the last system boot", "output": "who -b"}
+{"input": "recompresses logfile.gz from gzip to bzip2 format.", "output": "znew logfile.gz"}
+{"input": "compile a java class", "output": "javac App.java"}
+{"input": "formats file.txt for printing with double spacing.", "output": "pr -d file.txt"}
+{"input": "show amount of free and used memory in megabytes", "output": "free -m"}
+{"input": "lists traffic control queueing disciplines.", "output": "tc qdisc show"}
+{"input": "how do I create a 100mb file.img filled with zeros", "output": "dd if=/dev/zero of=file.img bs=1M count=100"}
+{"input": "show directory stack with indices vertically", "output": "dirs -v"}
+{"input": "extract username from passwd file", "output": "cut -d':' -f1 /etc/passwd"}
+{"input": "check the disk space usage of the entire system.", "output": "df -h"}
+{"input": "view file with more", "output": "more file.txt"}
+{"input": "dumps file.bin as decimal 4-byte integers with decimal offsets.", "output": "od -A d -t d4 file.bin"}
+{"input": "set the immutable attribute on file.txt preventing modifications", "output": "chattr +i file.txt"}
+{"input": "add write permission for the group on file.txt", "output": "chmod g+w file.txt"}
+{"input": "display the current shell history.", "output": "history"}
+{"input": "how do I list loaded ebpf programs", "output": "bpftool prog list"}
+{"input": "changes to the physical directory resolved from /path/to/symlink.", "output": "cd -P /path/to/symlink"}
+{"input": "extracts printable strings from the binary /bin/ls.", "output": "strings /bin/ls"}
+{"input": "how do I install the development tools package group on centos/rhel", "output": "yum groupinstall 'Development Tools'"}
+{"input": "show the current shell being used.", "output": "echo $SHELL"}
+{"input": "delete blank lines from file", "output": "sed -i '/^$/d' file.txt"}
+{"input": "disables the swap partition on /dev/sdb1.", "output": "swapoff /dev/sdb1"}
+{"input": "make file readable by everyone", "output": "chmod 644 file.txt"}
+{"input": "unzip without overwriting", "output": "unzip -n archive.zip"}
+{"input": "deletes file.txt.", "output": "rm file.txt"}
+{"input": "list files sorted by size largest first", "output": "ls -S"}
+{"input": "execute js file with node", "output": "node utils.js"}
+{"input": "sets i/o scheduling class to best-effort for process with pid 1234.", "output": "ionice -c2 -p 1234"}
+{"input": "run python3 app.py", "output": "python3 app.py"}
+{"input": "list hardware device information", "output": "lsdev"}
+{"input": "pull an image from dockerhub", "output": "docker pull ubuntu:22.04"}
+{"input": "view logfile.txt in less without clearing the screen on exit", "output": "less -X logfile.txt"}
+{"input": "set the full name for user in the gecos field", "output": "chfn -f 'Full Name' user"}
+{"input": "displays i/o statistics in megabytes per second.", "output": "iostat -m"}
+{"input": "create nested folders a/b/c", "output": "mkdir -p a/b/c"}
+{"input": "encodes file.bin to base64 and outputs to stdout.", "output": "base64 file.bin"}
+{"input": "show current disk partitions using fdisk.", "output": "sudo fdisk -l"}
+{"input": "how do I send tcp probes to port 80 on 192.168.1.1 for network testing", "output": "nping --tcp -p 80 192.168.1.1"}
+{"input": "how do I list only directories in the current directory", "output": "ls -d */"}
+{"input": "clears the directory stack.", "output": "dirs -c"}
+{"input": "run multiple commands sequentially", "output": "cmd1 && cmd2"}
+{"input": "lists files in a single column.", "output": "ls -1"}
+{"input": "show only repeated lines", "output": "uniq -d file.txt"}
+{"input": "how do I show detailed information about the httpd package on centos/rhel", "output": "yum info httpd"}
+{"input": "list system v message queues", "output": "ipcs -q"}
+{"input": "creates secure_dir with rwx permissions for owner only.", "output": "mkdir -m 700 secure_dir"}
+{"input": "recursively change permissions", "output": "chmod -R 755 folder/"}
+{"input": "changes to the current users home directory.", "output": "cd ~"}
+{"input": "lists shared memory segments.", "output": "ipcs -m"}
+{"input": "displays the systems hostname.", "output": "uname -n"}
+{"input": "change to the shared memory filesystem directory", "output": "cd /dev/shm"}
+{"input": "show manual page for the 'grep' command", "output": "man grep"}
+{"input": "send test message to the system log", "output": "logger 'Test message'"}
+{"input": "shows the time of the last system boot.", "output": "who -b"}
+{"input": "displays information about user accounts and their login history.", "output": "lslogins"}
+{"input": "runs vim in silent mode to execute script.vim.", "output": "vim -es -S script.vim"}
+{"input": "how do I set default acl for user with rwx permissions on new files in /data", "output": "setfacl -d -m u:user:rwx /data"}
+{"input": "displays network protocol statistics.", "output": "netstat -s"}
+{"input": "opens file.txt in vim without loading any configuration.", "output": "vim -u NONE file.txt"}
+{"input": "how do I list files sorted by file extension", "output": "ls -X"}
+{"input": "send the sigterm signal to the process with pid 1234", "output": "kill -SIGTERM 1234"}
+{"input": "enables the swap partition on /dev/sdb1.", "output": "swapon /dev/sdb1"}
+{"input": "check if a website 'example.com' is up using curl.", "output": "curl -Is http://example.com | head -n 1"}
+{"input": "reports disk i/o statistics for processes every second for 3 iterations.", "output": "pidstat -d 1 3"}
+{"input": "how do I monitor error.log for new lines starting with no initial output", "output": "tail -n 0 -f error.log"}
+{"input": "removes all acl entries from file.txt restoring default permissions.", "output": "setfacl -b file.txt"}
+{"input": "add to path", "output": "export PATH=$PATH:/new/path"}
+{"input": "create a symbolic link named 'link' pointing to 'target'.", "output": "ln -s target link"}
+{"input": "open config.conf in nano at line 10", "output": "nano +10 config.conf"}
+{"input": "compile main.c with all warnings enabled.", "output": "gcc -Wall main.c -o main"}
+{"input": "sends icmp echo requests to google.com with 100-byte packets.", "output": "ping -s 100 google.com"}
+{"input": "how do I list all running processes with detailed information", "output": "ps aux"}
+{"input": "open file.txt in vim without loading any configuration", "output": "vim -u NONE file.txt"}
+{"input": "zip a directory recursively", "output": "zip -r backup.zip mydir/"}
+{"input": "set an environment variable MY_VAR to 100.", "output": "export MY_VAR=100"}
+{"input": "displays file.txt with non-printable characters visible.", "output": "cat -v file.txt"}
+{"input": "execute python program", "output": "python3 program.py"}
+{"input": "creates an empty file named newfile.txt or updates its timestamp.", "output": "touch newfile.txt"}
+{"input": "displays the directory stack with indices vertically.", "output": "dirs -v"}
+{"input": "how do I open an encrypted luks device /dev/sdb1 as crypt", "output": "cryptsetup luksOpen /dev/sdb1 crypt"}
+{"input": "how do I move file.txt to /tmp creating a backup if it exists", "output": "mv -b file.txt /tmp"}
+{"input": "compile main.c with level 2 optimization.", "output": "gcc -O2 main.c -o main"}
+{"input": "lists background jobs with pids.", "output": "jobs -l"}
+{"input": "list extended attributes of file.txt", "output": "lsattr file.txt"}
+{"input": "how do I run emacs in batch mode to execute script.el", "output": "emacs --batch -l script.el"}
+{"input": "list selinux login mappings", "output": "semanage login -l"}
+{"input": "displays kernel messages with human-readable timestamps.", "output": "dmesg -T"}
+{"input": "show current user's username", "output": "whoami"}
+{"input": "sets file.txts timestamp to may 21 2025 1200.", "output": "touch -t 202505211200 file.txt"}
+{"input": "monitors network interface and address changes in real-time.", "output": "ip monitor"}
+{"input": "alias python to python3", "output": "alias python=python3"}
+{"input": "displays the routing table with numeric addresses.", "output": "route -n"}
+{"input": "how do I show status of the nginx service", "output": "systemctl status nginx"}
+{"input": "reverse lines of a file", "output": "tac file.txt"}
+{"input": "how do I show first 20 lines of access.log", "output": "head -n 20 access.log"}
+{"input": "how do I set the apparmor profile for nginx to enforce mode", "output": "aa-enforce /etc/apparmor.d/usr.sbin.nginx"}
+{"input": "how do I show current system date and time", "output": "date"}
+{"input": "removes acl entries for user from file.txt.", "output": "setfacl -x u:user file.txt"}
+{"input": "how do I add tcp port 8080 to selinux http_port_t for web services", "output": "semanage port -a -t http_port_t -p tcp 8080"}
+{"input": "create a hard link file2.txt to file1.txt", "output": "cp -l file1.txt file2.txt"}
+{"input": "how do I check the ext2/ext3/ext4 filesystem on /dev/sda1 without modifying it", "output": "e2fsck -n /dev/sda1"}
+{"input": "how do I show file.txt with end-of-line markers and non-printable characters", "output": "cat -e file.txt"}
+{"input": "show logs for the nginx service", "output": "journalctl -u nginx"}
+{"input": "map port 8080 to container port 80", "output": "docker run -p 8080:80 nginx"}
+{"input": "displays cpu information in a tabular format.", "output": "lscpu -e"}
+{"input": "verifies the integrity of group files.", "output": "grpck"}
+{"input": "restores default selinux contexts for /var/log.", "output": "restorecon -v /var/log"}
+{"input": "lists file locks held by processes.", "output": "lslocks"}
+{"input": "transfer file to remote", "output": "scp local.txt user@host:/home/user/"}
+{"input": "sets file.txt to read/write for owner only.", "output": "chmod 600 file.txt"}
+{"input": "set default acl for user with rwx permissions on new files in /data", "output": "setfacl -d -m u:user:rwx /data"}
+{"input": "initialize a git repository", "output": "git init"}
+{"input": "how do I show critical chain of services affecting boot time", "output": "systemd-analyze critical-chain"}
+{"input": "how do I change to the current users home directory", "output": "cd ~"}
+{"input": "how do I send the sigterm signal to the process with pid 1234", "output": "kill -SIGTERM 1234"}
+{"input": "open file.txt in the emacs text editor", "output": "emacs file.txt"}
+{"input": "how do I show real-time bandwidth usage by connection on eth0", "output": "iftop -i eth0"}
+{"input": "shows user and group ids for the current user.", "output": "id"}
+{"input": "how do I show cpu information in a parseable format without comments", "output": "lscpu -p"}
+{"input": "create new branch", "output": "git checkout -b feature-branch"}
+{"input": "how do I list all sockets with associated processes", "output": "ss -anp"}
+{"input": "run date every second updating the output", "output": "watch -n 1 'date'"}
+{"input": "display the calendar for the current month.", "output": "cal"}
+{"input": "make variable available to child processes", "output": "export VAR=value"}
+{"input": "stage all changes", "output": "git add ."}
+{"input": "how do I change current directory to /usr/share", "output": "cd /usr/share"}
+{"input": "securely copy a remote directory to local.", "output": "scp -r user@remote_host:/path/dir ."}
+{"input": "send icmp echo requests to googles public dns server", "output": "ping 8.8.8.8"}
+{"input": "remove the alias 'll'.", "output": "unalias ll"}
+{"input": "list all btrfs filesystems and their devices", "output": "btrfs filesystem show"}
+{"input": "how do I list listening ports and associated processes", "output": "netstat -tulpn"}
+{"input": "recursively changes ownership from root to user for files in /data.", "output": "chown -R --from=root user /data"}
+{"input": "displays network interface configuration.", "output": "ifconfig"}
+{"input": "displays lines in file.txt starting with word.", "output": "look word file.txt"}
+{"input": "list dependencies for the httpd package on centos/rhel", "output": "yum deplist httpd"}
+{"input": "sends tcp syn packets to 192.168.1.1 for network probing.", "output": "hping3 -S 192.168.1.1"}
+{"input": "show the last 50 lines of the system syslog.", "output": "tail -n 50 /var/log/syslog"}
+{"input": "set alias for ls", "output": "alias l='ls -la'"}
+{"input": "show all environment variables", "output": "env"}
+{"input": "how do I open file.txt in vim with line numbers enabled", "output": "vim -c 'set number' file.txt"}
+{"input": "how do I create script.sh with input until eof is entered", "output": "cat << EOF > script.sh"}
+{"input": "lists ipsec security associations.", "output": "ip xfrm state"}
+{"input": "run command with a nice value of 10 lower priority", "output": "nice -n 10 command"}
+{"input": "how do I show system hardware information", "output": "dmidecode -t system"}
+{"input": "monitor /var/log for filesystem events", "output": "inotifywait -m /var/log"}
+{"input": "displays file.bin in hexadecimal and ascii format.", "output": "hexdump -C file.bin"}
+{"input": "check for memory leaks in ./myapp using valgrind.", "output": "valgrind --leak-check=full ./myapp"}
+{"input": "open file.txt in emacs without loading the init file", "output": "emacs --no-init-file file.txt"}
+{"input": "remove unused dependencies on debian-based systems", "output": "apt autoremove"}
+{"input": "how do I show last 100 bytes of error.log", "output": "tail -c 100 error.log"}
+{"input": "opens an interactive debugger for the xfs filesystem on /dev/sda1.", "output": "xfs_db -r /dev/sda1"}
+{"input": "how do I create a tar archive of /data preserving acls and extended attributes", "output": "tar --acls --xattrs -cpf backup.tar /data"}
+{"input": "reports task switching activity every second for 3 iterations.", "output": "pidstat -w 1 3"}
+{"input": "how do I show bios information", "output": "dmidecode -t bios"}
+{"input": "show public ip using curl", "output": "curl ifconfig.me"}
+{"input": "how do I list all installed packages on fedora-based systems", "output": "dnf repoquery --installed"}
+{"input": "how do I monitor bandwidth usage on eth0 interactively", "output": "bmon -i eth0"}
+{"input": "run program with arguments", "output": "./program arg1 arg2"}
+{"input": "show cpu information in a tabular format", "output": "lscpu -e"}
+{"input": "aggressive nmap scan with service detection.", "output": "nmap -A 192.168.1.1"}
+{"input": "how do I list dependencies required by the python3 package on fedora-based systems", "output": "dnf repoquery --requires python3"}
+{"input": "show shared library dependencies of an executable", "output": "ldd ./myapp"}
+{"input": "list open files by a specific process id 1234.", "output": "lsof -p 1234"}
+{"input": "how do I show file type of 'mystery_file'", "output": "file mystery_file"}
+{"input": "how do I delete the group oldgroup", "output": "groupdel oldgroup"}
+{"input": "how do I list files with colorized output based on file type", "output": "ls --color=auto"}
+{"input": "how do I show file.bin in hexadecimal and ascii format", "output": "hexdump -C file.bin"}
+{"input": "how do I run command with idle i/o priority", "output": "ionice -c3 command"}
+{"input": "creates a named pipe called pipe.", "output": "mkfifo pipe"}
+{"input": "count words in file", "output": "wc -w file.txt"}
+{"input": "show superblock and block group information for /dev/sda1", "output": "dumpe2fs -h /dev/sda1"}
+{"input": "how do I list sockets with options suppressing header output", "output": "ss -H -o"}
+{"input": "how do I remove acl entries for user from file.txt", "output": "setfacl -x u:user file.txt"}
+{"input": "compile java with encoding", "output": "javac -encoding UTF-8 Main.java"}
+{"input": "set the apparmor profile for nginx to complain mode", "output": "aa-complain /etc/apparmor.d/usr.sbin.nginx"}
+{"input": "how do I list block devices and their mount points", "output": "lsblk"}
+{"input": "terminate all nginx processes", "output": "killall nginx"}
+{"input": "adds /tmp to directory stack without changing current directory.", "output": "pushd -n /tmp"}
+{"input": "lists listening tcp and udp sockets.", "output": "ss -tuln"}
+{"input": "apply stashed changes", "output": "git stash pop"}
+{"input": "list symbols in the object file main.o.", "output": "nm main.o"}
+{"input": "ssh with specific key file", "output": "ssh -i ~/.ssh/id_rsa user@host"}
+{"input": "show memory map for the process with pid 1234", "output": "pmap -x 1234"}
+{"input": "lists pid namespaces.", "output": "lsns -t pid"}
+{"input": "remove file data.csv", "output": "rm data.csv"}
+{"input": "show disk usage for ext4 filesystems only", "output": "df -t ext4"}
+{"input": "moves file.txt to /tmp without overwriting existing files.", "output": "mv -n file.txt /tmp"}
+{"input": "set the mtu of eth0 to 9000 for jumbo frames", "output": "ip link set eth0 mtu 9000"}
+{"input": "merge branch into current", "output": "git merge feature-branch"}
+{"input": "set file.txt to read/write for owner read-only for others", "output": "chmod 644 file.txt"}
+{"input": "list scsi devices and their attributes", "output": "lsscsi"}
+{"input": "remove unused dependencies on fedora-based systems", "output": "dnf autoremove"}
+{"input": "remove directory build", "output": "rm -rf build"}
+{"input": "deny all incoming traffic on port 22 using ufw.", "output": "sudo ufw deny 22/tcp"}
+{"input": "unzip archive here", "output": "unzip file.zip"}
+{"input": "change owner and group recursively", "output": "chown -R user:group folder/"}
+{"input": "how do I show password and account aging information for user", "output": "chage -l user"}
+{"input": "installs the development tools package group on centos/rhel.", "output": "yum groupinstall 'Development Tools'"}
+{"input": "find file named config.json", "output": "find . -name 'config.json'"}
+{"input": "how do I show file.txt in reverse line order", "output": "tac file.txt"}
+{"input": "how do I show systems hostname", "output": "uname -n"}
+{"input": "how do I list loaded ebpf maps", "output": "bpftool map list"}
+{"input": "creates a directory named newdir.", "output": "mkdir newdir"}
+{"input": "creates a symbolic link link.txt to file1.txt.", "output": "cp -s file1.txt link.txt"}
+{"input": "reports cpu usage every second for 3 iterations.", "output": "sar -u 1 3"}
+{"input": "show history of all commands typed", "output": "history"}
+{"input": "how do I create a new group named newgroup", "output": "groupadd newgroup"}
+{"input": "how do I list all active network connections and ports", "output": "netstat -an"}
+{"input": "show lines in file.txt starting with word", "output": "look word file.txt"}
+{"input": "deletes testuser and their home directory.", "output": "userdel -r testuser"}
+{"input": "list only directories in the current directory", "output": "ls -d */"}
+{"input": "displays the last 3 lines of file1.txt and file2.txt without headers.", "output": "tail -q -n 3 file1.txt file2.txt"}
+{"input": "how do I show file.txt suppressing multiple blank lines", "output": "cat -s file.txt"}
+{"input": "run bash script with arguments", "output": "bash script.sh arg1 arg2"}
+{"input": "displays the operating system name.", "output": "uname -o"}
+{"input": "how do I copy file.txt to the /backup directory", "output": "cp file.txt /backup"}
+{"input": "sets selinux context for /var/www to httpd_sys_content_t.", "output": "chcon -t httpd_sys_content_t /var/www"}
+{"input": "send the sigkill signal to the process with pid 1234", "output": "kill -SIGKILL 1234"}
+{"input": "creates an ip set named myset for firewall rules.", "output": "ipset create myset hash:ip"}
+{"input": "sends icmp echo requests to googles public dns server.", "output": "ping 8.8.8.8"}
+{"input": "connect via ssh with key", "output": "ssh -i ~/.ssh/id_rsa user@host"}
+{"input": "check open ports on the local machine.", "output": "sudo lsof -i -P -n | grep LISTEN"}
+{"input": "displays memory usage in bytes.", "output": "free -b"}
+{"input": "show file.txt with end-of-line markers and non-printable characters", "output": "cat -e file.txt"}
+{"input": "find all files larger than 100MB in /var/log.", "output": "find /var/log -size +100M"}
+{"input": "show file.txt suppressing multiple blank lines", "output": "cat -s file.txt"}
+{"input": "clear the terminal screen", "output": "clear"}
+{"input": "append 'Finished' to the end of 'status.txt'.", "output": "echo \"Finished\" >> status.txt"}
+{"input": "monitor logfile.txt in less similar to tail -f", "output": "less +F logfile.txt"}
+{"input": "delete file.txt", "output": "rm file.txt"}
+{"input": "how do I show first 10 lines of access.log with a file header", "output": "head -v access.log"}
+{"input": "lists only directories in the current directory.", "output": "ls -d */"}
+{"input": "find location of git", "output": "which git"}
+{"input": "list newest files first", "output": "ls -lt"}
+{"input": "ping 'google.com' four times.", "output": "ping -c 4 google.com"}
+{"input": "list dependencies of the nginx service", "output": "systemctl list-dependencies nginx"}
+{"input": "how do I show transaction history of yum on centos/rhel systems", "output": "yum history"}
+{"input": "opens logfile.txt in less starting at the end.", "output": "less +G logfile.txt"}
+{"input": "displays multicast routing table.", "output": "ip mroute show"}
+{"input": "compile main.c and optimize for binary size.", "output": "gcc -Os main.c -o main"}
+{"input": "download a file from url", "output": "wget https://example.com/file.zip"}
+{"input": "how do I terminate the process with pid 1234 gracefully", "output": "kill 1234"}
+{"input": "run node with environment variable", "output": "NODE_ENV=production node app.js"}
+{"input": "copy file.txt to the /backup directory", "output": "cp file.txt /backup"}
+{"input": "how do I delete testuser and their home directory", "output": "userdel -r testuser"}
+{"input": "show arp table with neighbor entries", "output": "ip neighbor show"}
+{"input": "how do I show system's hostname", "output": "hostname"}
+{"input": "lists selinux port mappings.", "output": "semanage port -l"}
+{"input": "get help for tar", "output": "man tar"}
+{"input": "count words in document.txt", "output": "wc -w document.txt"}
+{"input": "show first 16 bytes of file.bin in hex and ascii", "output": "hexdump -C -n 16 file.bin"}
+{"input": "lists files with their inode numbers.", "output": "ls -i"}
+{"input": "lists information about ipc facilities shared memory semaphores queues.", "output": "lsipc"}
+{"input": "lists mounted filesystems with disk usage details.", "output": "findmnt -D"}
+{"input": "how do I open an interactive debugger for the xfs filesystem on /dev/sda1", "output": "xfs_db -r /dev/sda1"}
+{"input": "run python module", "output": "python3 -m module_name"}
+{"input": "how do I change to the /proc directory of the current shell process", "output": "cd /proc/$$"}
+{"input": "combine two files side by side", "output": "paste file1.txt file2.txt"}
+{"input": "zip multiple files", "output": "zip archive.zip file1.txt file2.txt"}
+{"input": "list mounted filesystems with disk usage details", "output": "findmnt -D"}
+{"input": "append output to file", "output": "command >> output.txt"}
+{"input": "displays failed login attempts for user.", "output": "faillog -u user"}
+{"input": "how do I list selinux booleans with descriptions", "output": "semanage boolean -l"}
+{"input": "shows differences between two compressed files.", "output": "zdiff file1.gz file2.gz"}
+{"input": "open file.bin in an interactive hexadecimal editor", "output": "hexedit file.bin"}
+{"input": "sets the selinux user to system_u for file.txt.", "output": "chcon -u system_u file.txt"}
+{"input": "changes group ownership of file.txt to group.", "output": "chown :group file.txt"}
+{"input": "run a sh file", "output": "sh build.sh"}
+{"input": "create an ip set named myset for firewall rules", "output": "ipset create myset hash:ip"}
+{"input": "show system login logout and other events like reboots", "output": "last -x"}
+{"input": "remove nginx and its configuration files on debian-based systems", "output": "apt purge nginx"}
+{"input": "views logfile.txt in less without wrapping long lines.", "output": "less -S logfile.txt"}
+{"input": "perform a reverse dns lookup.", "output": "dig -x 8.8.8.8"}
+{"input": "open file.txt in vim with line numbers enabled", "output": "vim -c 'set number' file.txt"}
+{"input": "how do I show machine hardware architecture", "output": "uname -m"}
+{"input": "initializes etckeeper to track /etc in a version control system.", "output": "etckeeper init"}
+{"input": "open man page for chmod", "output": "man chmod"}
+{"input": "list files in reverse order", "output": "ls -r"}
+{"input": "generate position independent code for a shared library.", "output": "gcc -fPIC -c main.c"}
+{"input": "compile cpp with c++17", "output": "g++ -std=c++17 main.cpp -o main"}
+{"input": "show processes owned by user in top", "output": "top -u user"}
+{"input": "show directory tree", "output": "tree"}
+{"input": "show a tree of processes with pids", "output": "pstree -p"}
+{"input": "show current crontab for the user", "output": "crontab -l"}
+{"input": "runs command with a 10-second timeout.", "output": "timeout 10s command"}
+{"input": "run command on each line of file", "output": "cat list.txt | xargs -I{} echo {}"}
+{"input": "how do I change group ownership of file.txt to group", "output": "chgrp group file.txt"}
+{"input": "monitors error.log in real-time.", "output": "tail -f error.log"}
+{"input": "open an interactive debugger for the xfs filesystem on /dev/sda1", "output": "xfs_db -r /dev/sda1"}
+{"input": "scans 192.168.1.1 for open ports and service versions.", "output": "nmap -sV 192.168.1.1"}
+{"input": "how do I move dir1 to the /archive directory", "output": "mv dir1 /archive"}
+{"input": "delete file.txt with verbose output", "output": "rm -v file.txt"}
+{"input": "displays policy routing rules.", "output": "ip rule show"}
+{"input": "how do I show multicast routing table", "output": "ip mroute show"}
+{"input": "download a file and save it with a specific name.", "output": "curl -o output.html http://example.com"}
+{"input": "open config.conf in nano with 80-column line wrapping", "output": "nano -r 80 config.conf"}
+{"input": "displays inode details for /file.txt on /dev/sda1 using debugfs.", "output": "debugfs -R 'stat /file.txt' /dev/sda1"}
+{"input": "run javascript file", "output": "node app.js"}
+{"input": "check folder size", "output": "du -sh folder/"}
+{"input": "view logfile.txt in less preserving raw control characters", "output": "less -r logfile.txt"}
+{"input": "how do I open file.txt in vim in read-only mode", "output": "vim -R file.txt"}
+{"input": "list pids of processes named nginx", "output": "pgrep nginx"}
+{"input": "brings job 1 to the foreground.", "output": "fg %1"}
+{"input": "lists cron jobs for user.", "output": "crontab -u user -l"}
+{"input": "list open files for the process with pid 1234", "output": "lsof -p 1234"}
+{"input": "show last 50 lines of the system syslog", "output": "tail -n 50 /var/log/syslog"}
+{"input": "view logfile.txt with line numbers", "output": "less -N logfile.txt"}
+{"input": "extracts strings of 10 or more characters from /bin/ls.", "output": "strings -n 10 /bin/ls"}
+{"input": "displays the first 5 lines of access.log.", "output": "head -n 5 access.log"}
+{"input": "how do I show cpu temperature", "output": "sensors"}
+{"input": "checks the integrity of files in the nginx package on debian-based systems.", "output": "debsums -c nginx"}
+{"input": "how do I list all group names for user", "output": "id -Gn user"}
+{"input": "opens file.txt in emacs in terminal non-gui mode.", "output": "emacs -nw file.txt"}
+{"input": "how do I monitor filesystem access events in real-time", "output": "fatrace"}
+{"input": "converts tabs to 4 spaces in file.txt.", "output": "expand -t 4 file.txt"}
+{"input": "finds which package provides /usr/bin/python3 on centos/rhel.", "output": "yum provides /usr/bin/python3"}
+{"input": "monitor bandwidth usage on eth0 interactively", "output": "bmon -i eth0"}
+{"input": "ssh into remote machine", "output": "ssh user@hostname"}
+{"input": "creates a tar archive of /data preserving acls and extended attributes.", "output": "tar --acls --xattrs -cpf backup.tar /data"}
+{"input": "opens file.txt in vim in read-only mode.", "output": "vim -R file.txt"}
+{"input": "randomly shuffles the lines of file.txt.", "output": "sort -R file.txt"}
+{"input": "backs up the /dev/sda1 filesystem to backup.tar.", "output": "dump -f backup.tar /dev/sda1"}
+{"input": "opens file.txt in the vim text editor.", "output": "vim file.txt"}
+{"input": "monitors /var/log for filesystem events.", "output": "inotifywait -m /var/log"}
+{"input": "how do I run performance benchmarks for encryption algorithms", "output": "cryptsetup benchmark"}
+{"input": "displays the last 2 lines of error.log with file headers.", "output": "tail -v -n 2 error.log"}
+{"input": "search case insensitive for warning", "output": "grep -i 'warning' app.log"}
+{"input": "how do I open file1.txt and file2.txt in vim with a vertical split", "output": "vim -O file1.txt file2.txt"}
+{"input": "shows a list of recent user logins.", "output": "last"}
+{"input": "how do I list all selinux boolean settings", "output": "getsebool -a"}
+{"input": "lists extended attributes of file.txt.", "output": "lsattr file.txt"}
+{"input": "compile java file", "output": "javac Main.java"}
+{"input": "compile java source file", "output": "javac Program.java"}
+{"input": "list pid namespaces", "output": "lsns -t pid"}
+{"input": "show detailed information about the httpd package on centos/rhel", "output": "yum info httpd"}
+{"input": "how do I show kernel version and name", "output": "uname -snr"}
+{"input": "displays the access control list acl for file.txt.", "output": "getfacl file.txt"}
+{"input": "sets the apparmor profile for nginx to enforce mode.", "output": "aa-enforce /etc/apparmor.d/usr.sbin.nginx"}
+{"input": "invalidates the passwd cache in the name service cache daemon.", "output": "nscd -i passwd"}
+{"input": "creates a backup copy of file.txt as file.bak.", "output": "cp file.txt file.bak"}
+{"input": "displays system login logout and other events like reboots.", "output": "last -x"}
+{"input": "show kernel messages with human-readable timestamps", "output": "dmesg -T"}
+{"input": "list processes using most memory", "output": "ps aux --sort=-%mem | head"}
+{"input": "opens file.txt in emacs without loading the init file.", "output": "emacs --no-init-file file.txt"}
+{"input": "displays passwd database entry for user.", "output": "getent passwd user"}
+{"input": "how do I show memory map for the process with pid 1234", "output": "pmap -x 1234"}
+{"input": "forcefully terminates the process with pid 1234.", "output": "kill -9 1234"}
+{"input": "displays the machine hardware architecture.", "output": "uname -m"}
+{"input": "recursively deletes dir1 and its contents.", "output": "rm -r dir1"}
+{"input": "make a new file called config.yaml", "output": "touch config.yaml"}
+{"input": "how do I create a symbolic link link.txt to file1.txt", "output": "cp -s file1.txt link.txt"}
+{"input": "extract the contents of 'archive.tar.gz'.", "output": "tar -xzvf archive.tar.gz"}
+{"input": "how do I send icmp echo requests to google.com every 0.5 seconds", "output": "ping -i 0.5 google.com"}
+{"input": "sends the sigterm signal to the process with pid 1234.", "output": "kill -SIGTERM 1234"}
+{"input": "how do I show arp cache without resolving hostnames", "output": "arp -n"}
+{"input": "find location of node", "output": "which node"}
+{"input": "make file executable", "output": "chmod +x script.sh"}
+{"input": "splits file.txt into files at lines starting with .", "output": "csplit file.txt '/^#/' {*}"}
+{"input": "how do I show a tree of processes with pids", "output": "pstree -p"}
+{"input": "lists block devices in json format.", "output": "lsblk -J"}
+{"input": "show current system date and time", "output": "date"}
+{"input": "lists processes with open tcp listening sockets.", "output": "lsof -iTCP -sTCP:LISTEN"}
+{"input": "show contents of 'readme.md' in the terminal", "output": "cat readme.md"}
+{"input": "list device mapper devices", "output": "dmsetup ls"}
+{"input": "opens config.conf in nano with constant cursor position display.", "output": "nano -c config.conf"}
+{"input": "how do I force kill all nginx processes", "output": "pkill -9 nginx"}
+{"input": "how do I list pids of processes using port 80", "output": "lsof -t -i :80"}
+{"input": "open file.txt in vim in read-only mode", "output": "vim -R file.txt"}
+{"input": "show file.txt in reverse line order", "output": "tac file.txt"}
+{"input": "how do I add execute permission for the owner of script.sh", "output": "chmod u+x script.sh"}
+{"input": "send icmp echo requests to google.com with 100-byte packets", "output": "ping -s 100 google.com"}
+{"input": "show a list of recent user logins", "output": "last"}
+{"input": "how do I show uuid of all disk partitions", "output": "blkid"}
+{"input": "opens file.txt in emacs non-interactively via lisp expression.", "output": "emacs --eval '(find-file \"file.txt\")'"}
+{"input": "list only directories", "output": "ls -d */"}
+{"input": "show current working directory path", "output": "pwd"}
+{"input": "how do I list processes using port 80", "output": "lsof -i :80"}
+{"input": "display routing table using the ip command.", "output": "ip route show"}
+{"input": "find files owned by root", "output": "find / -user root -type f"}
+{"input": "how do I show real-time kernel slab cache usage", "output": "slabtop"}
+{"input": "overwrites and deletes file.txt securely.", "output": "shred -u file.txt"}
+{"input": "delete file.txt without prompting", "output": "rm -f file.txt"}
+{"input": "how do I open file.txt in emacs with minimal configuration", "output": "emacs -Q file.txt"}
+{"input": "run emacs in batch mode to execute script.el", "output": "emacs --batch -l script.el"}
+{"input": "lists pids of processes named nginx.", "output": "pgrep nginx"}
+{"input": "removes the immutable attribute from file.txt.", "output": "chattr -i file.txt"}
+{"input": "compile for a 32-bit architecture on a 64-bit system.", "output": "gcc -m32 main.c -o main32"}
+{"input": "enable the 'docker' service to start at boot.", "output": "sudo systemctl enable docker"}
+{"input": "print physical current directory resolving symlinks", "output": "pwd -P"}
+{"input": "how do I delete file.txt with verbose output", "output": "rm -v file.txt"}
+{"input": "show first 10 lines of access.log with a file header", "output": "head -v access.log"}
+{"input": "show metadata for the luks partition on /dev/sdb1", "output": "cryptsetup luksDump /dev/sdb1"}
+{"input": "show listening ports", "output": "ss -tlnp"}
+{"input": "generates a c-style include file with a hex array from file.txt.", "output": "xxd -i file.txt"}
+{"input": "create a named pipe called pipe", "output": "mkfifo pipe"}
+{"input": "show the last 10 lines of the file 'output.log'.", "output": "tail -n 10 output.log"}
+{"input": "how do I show i/o usage by processes showing only active ones", "output": "iotop -o"}
+{"input": "how do I set the apparmor profile for nginx to complain mode", "output": "aa-complain /etc/apparmor.d/usr.sbin.nginx"}
+{"input": "how do I show disk usage in human-readable format", "output": "df -h"}
+{"input": "switch to main branch", "output": "git checkout main"}
+{"input": "move up one directory level", "output": "cd .."}
+{"input": "run java with classpath", "output": "java -cp . Main"}
+{"input": "searches audit logs for login-related events.", "output": "ausearch -m LOGIN"}
+{"input": "compile with stack smashing protection.", "output": "gcc -fstack-protector main.c -o main"}
+{"input": "fetch only the headers of a website.", "output": "curl -I http://google.com"}
+{"input": "prints the physical current directory resolving symlinks.", "output": "pwd -P"}
+{"input": "dumps the configuration of apt on debian-based systems.", "output": "apt-config dump"}
+{"input": "captures http traffic on port 80 via eth0.", "output": "tcpdump -i eth0 port 80"}
+{"input": "how do I show ip address of eth0 interface", "output": "ip addr show eth0"}
+{"input": "run a makefile in the current directory.", "output": "make"}
+{"input": "how do I open file.txt in vim at line 10", "output": "vim +10 file.txt"}
+{"input": "print only line 5 of file", "output": "sed -n '5p' file.txt"}
+{"input": "extracts the first field from comma-separated file.csv.", "output": "cut -d ',' -f 1 file.csv"}
+{"input": "starts a scrub to check data integrity on the btrfs filesystem at /mnt.", "output": "btrfs scrub start /mnt"}
+{"input": "force kill process by name", "output": "pkill -9 processname"}
+{"input": "removes unused dependencies on debian-based systems.", "output": "apt autoremove"}
+{"input": "how do I move file.txt to /tmp overwriting without prompting", "output": "mv -f file.txt /tmp"}
+{"input": "how do I show contents of an lzip-compressed file.txt.lz", "output": "lzcat file.txt.lz"}
+{"input": "open config.conf in nano without wrapping long lines", "output": "nano -w config.conf"}
+{"input": "concatenates and displays contents of file1.txt and file2.txt.", "output": "cat file1.txt file2.txt"}
+{"input": "show detailed hardware info for the cpu.", "output": "lscpu"}
+{"input": "show file type of 'mystery_file'", "output": "file mystery_file"}
+{"input": "how do I list mounted ext4 filesystems with details", "output": "findmnt -t ext4"}
+{"input": "compare two files", "output": "diff file1.txt file2.txt"}
+{"input": "create a static library libtest.a from objects.", "output": "ar rcs libtest.a main.o utils.o"}
+{"input": "displays network interface statistics.", "output": "netstat -i"}
+{"input": "how do I copy file.txt to /backup preserving timestamps and permissions", "output": "cp -p file.txt /backup"}
+{"input": "run top for one iteration and exits", "output": "top -n 1"}
+{"input": "run python2 file", "output": "python script.py"}
+{"input": "update the modification time of file.txt", "output": "touch -m file.txt"}
+{"input": "how do I show a concise hardware summary", "output": "lshw -short"}
+{"input": "forcefully terminates all nginx processes.", "output": "pkill -9 nginx"}
+{"input": "sets the account expiration date for user to dec 31 2025.", "output": "chage -E 2025-12-31 user"}
+{"input": "show current users username", "output": "whoami"}
+{"input": "displays the total size of /var/log in human-readable format.", "output": "du -sh /var/log"}
+{"input": "splits file.txt at lines starting with into numbered files skipping empty files.", "output": "csplit -z file.txt '/^#/' {*}"}
+{"input": "generate a new ssh key pair.", "output": "ssh-keygen -t rsa -b 4096"}
+{"input": "view compressed logfile.gz with pagination similar to more", "output": "zmore logfile.gz"}
+{"input": "creates a character device node /dev/mynode with major 1 minor 3.", "output": "mknod /dev/mynode c 1 3"}
+{"input": "runs ip addr command within the ns1 network namespace.", "output": "ip netns exec ns1 ip addr"}
+{"input": "build image from dockerfile", "output": "docker build -t myapp:latest ."}
+{"input": "scroll through file", "output": "less file.txt"}
+{"input": "opens file.txt in vim at line 10.", "output": "vim +10 file.txt"}
+{"input": "compress folder into zip", "output": "zip -r project.zip project/"}
+{"input": "print 'Hello World' to the terminal.", "output": "echo \"Hello World\""}
+{"input": "lists system v semaphore arrays.", "output": "ipcs -s"}
+{"input": "how do I add an selinux file context for /var/www and its contents", "output": "semanage fcontext -a -t httpd_sys_content_t '/var/www(/.*)?'"}
+{"input": "show first 5 lines of 'database.sql'", "output": "head -n 5 database.sql"}
+{"input": "show network interface configuration", "output": "ifconfig"}
+{"input": "show memory usage in human-readable format", "output": "free -h"}
+{"input": "sets default acl for user with rwx permissions on new files in /data.", "output": "setfacl -d -m u:user:rwx /data"}
+{"input": "copies file.txt to /backup only if newer or missing.", "output": "cp -u file.txt /backup"}
+{"input": "how do I change ownership of symlink to user without affecting the target", "output": "chown -h user symlink"}
+{"input": "redirect output to file", "output": "command > output.txt"}
+{"input": "show cpu temperature", "output": "sensors"}
+{"input": "how do I open debugfs in read-only mode for the ext2/ext3/ext4 filesystem on /dev/sda1", "output": "debugfs -c /dev/sda1"}
+{"input": "show remote url", "output": "git remote -v"}
+{"input": "changes to /var/log and adds current directory to stack.", "output": "pushd /var/log"}
+{"input": "how do I show manual page for the 'grep' command", "output": "man grep"}
+{"input": "download file from server", "output": "scp user@host:/var/log/app.log ."}
+{"input": "show information about a binary file using size.", "output": "size ./myapp"}
+{"input": "adds execute permission for the owner of script.sh.", "output": "chmod u+x script.sh"}
+{"input": "delete files found by find", "output": "find . -name '*.tmp' | xargs rm"}
+{"input": "displays a concise hardware summary.", "output": "lshw -short"}
+{"input": "how do I show all kernel parameters and their values", "output": "sysctl -a"}
+{"input": "copies dir1 to /backup preserving structure and attributes.", "output": "cp -a dir1 /backup"}
+{"input": "how do I change owner of file.txt to user with verbose output", "output": "chown -v user file.txt"}
+{"input": "displays i/o usage by processes showing only active ones.", "output": "iotop -o"}
+{"input": "how do I list all processes with full details", "output": "ps -ef"}
+{"input": "lists all group names for user.", "output": "id -Gn user"}
+{"input": "displays memory usage every 2 seconds.", "output": "free -s 2"}
+{"input": "substitute text in file without saving", "output": "sed 's/old/new/g' file.txt"}
+{"input": "how do I list selinux user mappings", "output": "semanage user -l"}
+{"input": "reports disk i/o statistics.", "output": "vmstat -d"}
+{"input": "show resource usage by control groups", "output": "systemd-cgtop"}
+{"input": "measures the execution time of command.", "output": "time command"}
+{"input": "sorts the lines of file.txt alphabetically.", "output": "sort file.txt"}
+{"input": "lists logged-in users with idle time and pid.", "output": "who -u"}
+{"input": "displays system logs since the last boot.", "output": "journalctl -b"}
+{"input": "captures packets on eth0 displaying both hex and ascii.", "output": "tcpdump -X -i eth0"}
+{"input": "show only directories in tree", "output": "tree -d"}
+{"input": "how do I show network interface statistics", "output": "netstat -i"}
+{"input": "list files in long format with human-readable sizes", "output": "ls -lh"}
+{"input": "opens file.txt in the emacs text editor.", "output": "emacs file.txt"}
+{"input": "how do I open file.txt in emacs in terminal non-gui mode", "output": "emacs -nw file.txt"}
+{"input": "list background jobs with pids", "output": "jobs -l"}
+{"input": "show differences side by side", "output": "diff -y file1.txt file2.txt"}
+{"input": "list files sorted by file extension", "output": "ls -X"}
+{"input": "show dependencies for the nginx package on debian-based systems", "output": "apt depends nginx"}
+{"input": "show last 5 lines of access.log", "output": "tail -n 5 access.log"}
+{"input": "lists hardware device information.", "output": "lsdev"}
+{"input": "lists the current users cron jobs.", "output": "crontab -l"}
+{"input": "show last 2 lines of error.log with file headers", "output": "tail -v -n 2 error.log"}
+{"input": "run sh script verbosely", "output": "sh -x script.sh"}
+{"input": "interactively adds a new user to the system.", "output": "adduser newuser"}
+{"input": "compile cpp with debugging", "output": "g++ -g main.cpp -o main"}
+{"input": "count lines matching error", "output": "grep -c 'error' app.log"}
+{"input": "adds ip 192.168.1.100 to the ip set myset.", "output": "ipset add myset 192.168.1.100"}
+{"input": "show inode details for /file.txt on /dev/sda1 using debugfs", "output": "debugfs -R 'stat /file.txt' /dev/sda1"}
+{"input": "check java version", "output": "java --version"}
+{"input": "show tcp protocol statistics", "output": "netstat -s | grep Tcp"}
+{"input": "show the ip address of eth0 interface.", "output": "ip addr show eth0"}
+{"input": "compile c file", "output": "gcc main.c -o main"}
+{"input": "show operating system name", "output": "uname -o"}
+{"input": "replace hello with world in file.txt", "output": "sed -i 's/hello/world/g' file.txt"}
+{"input": "counts occurrences of each unique line in file.txt.", "output": "uniq -c file.txt"}
+{"input": "how do I show performance analysis from the last perf record", "output": "perf report"}
+{"input": "lists configured ip sets for firewall rules.", "output": "ipset list"}
+{"input": "shows disk usage in human-readable format.", "output": "df -h"}
+{"input": "read file app.log", "output": "cat app.log"}
+{"input": "set the mtu size for eth0.", "output": "sudo ip link set eth0 mtu 1400"}
+{"input": "sets the mtu of eth0 to 9000 for jumbo frames.", "output": "ip link set eth0 mtu 9000"}
+{"input": "moves file.txt to /tmp creating a backup if it exists.", "output": "mv -b file.txt /tmp"}
+{"input": "deletes the group oldgroup.", "output": "groupdel oldgroup"}
+{"input": "how do I create an ip set named myset for firewall rules", "output": "ipset create myset hash:ip"}
+{"input": "find empty files", "output": "find . -empty -type f"}
+{"input": "restores the filesystem from backup.tar.", "output": "restore -rf backup.tar"}
+{"input": "sort numerically", "output": "sort -n numbers.txt"}
+{"input": "show last 10 lines of the file 'output.log'", "output": "tail -n 10 output.log"}
+{"input": "run posix shell script", "output": "sh setup.sh"}
+{"input": "removes nginx and its configuration files on debian-based systems.", "output": "apt purge nginx"}
+{"input": "changes the current directory to /usr/share.", "output": "cd /usr/share"}
+{"input": "copy file into container", "output": "docker cp file.txt mycontainer:/app/"}
+{"input": "how do I show arp table entries", "output": "arp -a"}
+{"input": "creates a hexadecimal dump of file.bin.", "output": "xxd file.bin"}
+{"input": "adds testuser with a specified home directory.", "output": "adduser --home /home/testuser testuser"}
+{"input": "list listening tcp and udp sockets", "output": "ss -tuln"}
+{"input": "scan local network for active devices.", "output": "nmap -sn 192.168.1.0/24"}
+{"input": "show status of apparmor profiles and processes", "output": "aa-status"}
+{"input": "listens for incoming connections on port 12345.", "output": "netcat -l 12345"}
+{"input": "remove acl entries for user from file.txt", "output": "setfacl -x u:user file.txt"}
+{"input": "list all group names for user", "output": "id -Gn user"}
+{"input": "how do I list block devices with filesystem types and uuids", "output": "lsblk -f"}
+{"input": "recursively changes ownership of /data to user and group.", "output": "chown -R user:group /data"}
+{"input": "how do I show directory stack one entry per line", "output": "dirs -p"}
+{"input": "install python package", "output": "pip3 install package_name"}
+{"input": "show memory usage in bytes", "output": "free -b"}
+{"input": "change user password.", "output": "passwd"}
+{"input": "list all environment variables.", "output": "env"}
+{"input": "how do I set the account expiration date for user to dec 31 2025", "output": "usermod -e 2025-12-31 user"}
+{"input": "go up one level", "output": "cd .."}
+{"input": "creates a group named newgroup with gid 2000.", "output": "addgroup --gid 2000 newgroup"}
+{"input": "list processes sorted by memory usage.", "output": "ps aux --sort=-%mem"}
+{"input": "how do I list logged-in users with idle time and pid", "output": "who -u"}
+{"input": "how do I change permissions of 'script.sh' to be executable", "output": "chmod +x script.sh"}
+{"input": "start python interactive shell", "output": "python3"}
+{"input": "add ip 192.168.1.100 to the ip set myset", "output": "ipset add myset 192.168.1.100"}
+{"input": "how do I change current directory to /usr/local/bin", "output": "cd /usr/local/bin"}
+{"input": "how do I open file.txt in emacs without loading the init file", "output": "emacs --no-init-file file.txt"}
+{"input": "how do I show extended attributes for file.txt", "output": "getfattr -d file.txt"}
+{"input": "views logfile.txt in less without clearing the screen on exit.", "output": "less -X logfile.txt"}
+{"input": "how do I set the open file limit to 1024 for process with pid 1234", "output": "prlimit --pid 1234 --nofile=1024"}
+{"input": "how do I show only the first column of 'data.txt'", "output": "awk '{print $1}' data.txt"}
+{"input": "copy file.txt to /backup with verbose output", "output": "cp -v file.txt /backup"}
+{"input": "how do I set up /dev/sdb1 as a swap partition", "output": "mkswap /dev/sdb1"}
+{"input": "print working directory", "output": "pwd"}
+{"input": "monitor all network connections in real-time.", "output": "sudo watch -n 1 ss -tn"}
+{"input": "how do I show detailed information about the python3 package on debian-based systems", "output": "apt show python3"}
+{"input": "create zip of current folder", "output": "zip -r output.zip ."}
+{"input": "show size of the current directory", "output": "du -sh ."}
+{"input": "displays the contents of an lzip-compressed file.txt.lz.", "output": "lzcat file.txt.lz"}
+{"input": "show file sizes human readable", "output": "ls -lh"}
+{"input": "show password and account aging information for user", "output": "chage -l user"}
+{"input": "resizes file.txt to exactly 1 megabyte.", "output": "truncate -s 1M file.txt"}
+{"input": "where am i", "output": "pwd"}
+{"input": "create an alias 'll' for 'ls -la'.", "output": "alias ll='ls -la'"}
+{"input": "creates directory newdir with parent directories as needed.", "output": "mkdir -p /path/to/newdir"}
+{"input": "assigns ip address 192.168.1.101/24 to eth0.", "output": "ip addr add 192.168.1.101/24 dev eth0"}
+{"input": "list dependencies required by the python3 package on fedora-based systems", "output": "dnf repoquery --requires python3"}
+{"input": "stop a running container", "output": "docker stop mycontainer"}
+{"input": "create directory newdir with parent directories as needed", "output": "mkdir -p /path/to/newdir"}
+{"input": "terminates processes accessing /var/log/syslog.", "output": "fuser -k /var/log/syslog"}
+{"input": "find string in all python files", "output": "grep -r 'string' --include='*.py' ."}
+{"input": "check the ext4 filesystem on /dev/sda1 without making changes", "output": "fsck.ext4 -n /dev/sda1"}
+{"input": "how do I show first 100 bytes of file.txt", "output": "head -c 100 file.txt"}
+{"input": "get columns 2 and 3", "output": "cut -f2,3 file.tsv"}
+{"input": "sets script.sh to executable for all readable/writable for owner.", "output": "chmod 755 script.sh"}
+{"input": "how do I show last 2 lines of error.log with file headers", "output": "tail -v -n 2 error.log"}
+{"input": "copy file from remote server", "output": "scp user@host:/remote/file.txt ."}
+{"input": "sends 2 icmp echo requests to the ip 192.168.1.1.", "output": "ping -c 2 192.168.1.1"}
+{"input": "monitors network traffic on eth0 interactively.", "output": "iptraf-ng -i eth0"}
+{"input": "how do I list linux namespaces e.g. pid network user", "output": "lsns"}
+{"input": "show cpu usage sorted", "output": "ps aux --sort=-%cpu | head -10"}
+{"input": "how do I list pid namespaces", "output": "lsns -t pid"}
+{"input": "download a url", "output": "wget https://example.com/file.zip"}
+{"input": "creates newuser with a home directory and zsh as the default shell.", "output": "useradd -m -s /bin/zsh newuser"}
+{"input": "list the current users cron jobs", "output": "crontab -l"}
+{"input": "determines the file type of file.bin.", "output": "file file.bin"}
+{"input": "list all sockets with associated processes", "output": "ss -anp"}
+{"input": "lists processes with the command name nginx.", "output": "ps -C nginx"}
+{"input": "displays the memory map for the process with pid 1234.", "output": "pmap -x 1234"}
+{"input": "lists available modules on fedora-based systems.", "output": "dnf module list"}
+{"input": "download a file from 'http://example.com/file.zip'.", "output": "wget http://example.com/file.zip"}
+{"input": "checks for available package updates on centos/rhel systems.", "output": "yum check-update"}
+{"input": "view logfile.txt in less with verbose status", "output": "less -M logfile.txt"}
+{"input": "shows lines common to both sorted files file1.txt and file2.txt.", "output": "comm -12 file1.txt file2.txt"}
+{"input": "displays the first 3 lines of file1.txt and file2.txt with headers.", "output": "head -n 3 file1.txt file2.txt"}
+{"input": "show environmental variables.", "output": "printenv"}
+{"input": "profile ./myapp using gprof.", "output": "gprof ./myapp gmon.out"}
+{"input": "performs a dns lookup for google.com.", "output": "host google.com"}
+{"input": "merges lines of file1.txt and file2.txt side by side.", "output": "paste file1.txt file2.txt"}
+{"input": "how do I show unit file for the nginx service", "output": "systemctl cat nginx"}
+{"input": "lists selinux user mappings.", "output": "semanage user -l"}
+{"input": "list all installed packages on debian-based systems", "output": "apt list --installed"}
+{"input": "completely purge the 'nginx' package including configs.", "output": "sudo apt purge nginx"}
+{"input": "how do I add newuser to the sudo group", "output": "usermod -aG sudo newuser"}
+{"input": "compile cpp with optimization", "output": "g++ -O2 main.cpp -o main"}
+{"input": "run java with more memory", "output": "java -Xmx512m Main"}
+{"input": "interactively add a new user to the system", "output": "adduser newuser"}
+{"input": "monitor network interface and address changes in real-time", "output": "ip monitor"}
+{"input": "open logfile.txt in less starting at the end", "output": "less +G logfile.txt"}
+{"input": "copy dir1 to /backup preserving structure and attributes", "output": "cp -a dir1 /backup"}
+{"input": "lists firewall rules with verbose output.", "output": "iptables -L -v"}
+{"input": "extracts the first 10 characters of each line in file.txt.", "output": "cut -c 1-10 file.txt"}
+{"input": "view the last boot messages.", "output": "journalctl -b"}
+{"input": "displays file.txt suppressing multiple blank lines.", "output": "cat -s file.txt"}
+{"input": "show which shell i am using", "output": "echo $SHELL"}
+{"input": "updates package lists for upgrades on centos/rhel systems.", "output": "yum update"}
+{"input": "changes the password for newuser.", "output": "passwd newuser"}
+{"input": "compile c with debugging symbols", "output": "gcc -g main.c -o main"}
+{"input": "how do I show differences between two compressed files", "output": "zdiff file1.gz file2.gz"}
+{"input": "traces file open system calls using ebpf printing process and file names.", "output": "bpftrace -e 'tracepoint:syscalls:sys_enter_openat { printf(\"%s opened %s\n\", comm, str(args->filename)); }'"}
+{"input": "summarizes system call usage for the process with pid 1234.", "output": "strace -c -p 1234"}
+{"input": "how do I show contents of compressed logfile.gz without uncompressing", "output": "zcat logfile.gz"}
+{"input": "create tar.gz of folder", "output": "tar -czf backup.tar.gz myfolder/"}
+{"input": "displays information about user including login and mail status.", "output": "finger user"}
+{"input": "run python script with arguments", "output": "python3 script.py arg1 arg2"}
+{"input": "build project with make", "output": "make"}
+{"input": "list sockets with memory usage details", "output": "ss -M"}
+{"input": "update the access time of file.txt", "output": "touch -a file.txt"}
+{"input": "displays the last 10 lines of error.log.", "output": "tail -n 10 error.log"}
+{"input": "scan a remote host for common open ports.", "output": "nmap 192.168.1.1"}
+{"input": "list configured ip sets for firewall rules", "output": "ipset list"}
+{"input": "print logical current directory preserving symlinks", "output": "pwd -L"}
+{"input": "list network interfaces and their status", "output": "ip link show"}
+{"input": "resumes job 1 in the background.", "output": "bg %1"}
+{"input": "lists all installed packages on debian-based systems.", "output": "apt list --installed"}
+{"input": "displays the status of apparmor profiles and processes.", "output": "aa-status"}
+{"input": "how do I create or overwrites newfile.txt with input from stdin ctrld to end", "output": "cat > newfile.txt"}
+{"input": "opens file1.txt and file2.txt in vim with a horizontal split.", "output": "vim -o file1.txt file2.txt"}
+{"input": "remove cached data and metadata on fedora-based systems", "output": "dnf clean all"}
+{"input": "adds an audit rule to monitor write and attribute changes to /etc/passwd.", "output": "auditctl -a always,exit -F path=/etc/passwd -F perm=wa"}
+{"input": "show processes for a specific user in htop", "output": "htop -u user"}
+{"input": "how do I show detailed memory hardware information", "output": "dmidecode -t memory"}
+{"input": "copies file.txt to /backup preserving timestamps and permissions.", "output": "cp -p file.txt /backup"}
+{"input": "check for listening ports using netstat.", "output": "netstat -l"}
+{"input": "how do I set file.txts timestamp to may 21 2025 1200", "output": "touch -t 202505211200 file.txt"}
+{"input": "compares two sorted files showing unique and common lines.", "output": "comm file1.txt file2.txt"}
+{"input": "list control groups in the system", "output": "lscgroup"}
+{"input": "add testuser with a specified home directory", "output": "adduser --home /home/testuser testuser"}
+{"input": "how do I set the gecos comment field for user to full name", "output": "usermod -c 'Full Name' user"}
+{"input": "how do I change to /var/log and adds current directory to stack", "output": "pushd /var/log"}
+{"input": "give the current user full ownership of 'my_project' folder.", "output": "sudo chown -R $USER:$USER my_project"}
+{"input": "how do I list processes owned by user", "output": "ps -u user"}
+{"input": "show ip addresses and interface details", "output": "ip addr show"}
+{"input": "lists dependencies for the httpd package on centos/rhel.", "output": "yum deplist httpd"}
+{"input": "count errors in log file", "output": "grep -c 'ERROR' app.log"}
+{"input": "how do I show access control list acl for file.txt", "output": "getfacl file.txt"}
+{"input": "display information about the 'bash' executable.", "output": "ls -l $(which bash)"}
+{"input": "show superblock information for the ext2/ext3/ext4 filesystem on /dev/sda1", "output": "tune2fs -l /dev/sda1"}
+{"input": "run npm start", "output": "npm start"}
+{"input": "how do I send arp requests to 192.168.1.1 to resolve mac address", "output": "arping 192.168.1.1"}
+{"input": "extract archive to folder", "output": "tar -xzf archive.tar.gz -C /target"}
+{"input": "monitor network traffic on eth0 with a graphical interface", "output": "nload eth0"}
+{"input": "send 4 icmp echo requests to google.com to check connectivity", "output": "ping -c 4 google.com"}
+{"input": "save output and also show it", "output": "command | tee output.txt"}
+{"input": "generate preprocessor output from main.c.", "output": "gcc -E main.c"}
+{"input": "how do I open config.conf in nano with tabs set to 4 spaces", "output": "nano -T 4 config.conf"}
+{"input": "changes owner of file.txt to user with verbose output.", "output": "chown -v user file.txt"}
+{"input": "creates a symbolic link link.conf to /etc/config.conf.", "output": "ln -s /etc/config.conf link.conf"}
+{"input": "run npm test", "output": "npm test"}
+{"input": "moves file.txt to /tmp with interactive prompt for overwrite.", "output": "mv -i file.txt /tmp"}
+{"input": "set path variable", "output": "export PATH=$PATH:/usr/local/bin"}
+{"input": "show tree with depth 2", "output": "tree -L 2"}
+{"input": "how do I send the sigkill signal to the process with pid 1234", "output": "kill -SIGKILL 1234"}
+{"input": "compresses file.txt using xz compression.", "output": "xz -z file.txt"}
+{"input": "displays the version control log for /etc managed by etckeeper.", "output": "etckeeper vcs log"}
+{"input": "list memory ranges and their online status", "output": "lsmem"}
+{"input": "display real-time memory stats.", "output": "watch -n 1 free -m"}
+{"input": "show first 20 lines of access.log", "output": "head -n 20 access.log"}
+{"input": "displays the first 2 lines of file1.txt and file2.txt without headers.", "output": "head -q -n 2 file1.txt file2.txt"}
+{"input": "removes the scheduled job with id 1 from the at queue.", "output": "atrm 1"}
+{"input": "removes the empty directory empty_dir.", "output": "rmdir empty_dir"}
+{"input": "list current audit rules for system monitoring", "output": "auditctl -l"}
+{"input": "displays the unit file for the nginx service.", "output": "systemctl cat nginx"}
+{"input": "how do I list open files for the process with pid 1234", "output": "lsof -p 1234"}
+{"input": "execute shell file", "output": "sh run.sh"}
+{"input": "how do I view logfile.txt in less treating backspaces as non-destructive", "output": "less -u logfile.txt"}
+{"input": "how do I show routing table with numeric addresses", "output": "route -n"}
+{"input": "displays a summary of virtual memory statistics.", "output": "vmstat -s"}
+{"input": "lists linux namespaces e.g. pid network user.", "output": "lsns"}
+{"input": "add line at beginning of file", "output": "sed -i '1i # header' file.txt"}
+{"input": "compile all java files", "output": "javac *.java"}
+{"input": "how do I show error.log starting from the second line", "output": "tail -n +2 error.log"}
+{"input": "displays the contents of an xz-compressed file.txt.xz.", "output": "xzcat file.txt.xz"}
+{"input": "set a breakpoint at main in gdb.", "output": "gdb -ex 'break main' ./myapp"}
+{"input": "view file with more pager", "output": "more file.txt"}
+{"input": "show cpu information in a parseable format without comments", "output": "lscpu -p"}
+{"input": "show top running processes by cpu usage.", "output": "ps aux --sort=-%cpu | head"}
+{"input": "show first 100 bytes of file.txt", "output": "head -c 100 file.txt"}
+{"input": "shows network interface statistics.", "output": "ip -s link"}
+{"input": "show extended i/o statistics every second for 3 iterations", "output": "iostat -x 1 3"}
+{"input": "show group memberships for the current user.", "output": "groups"}
+{"input": "execute sh file", "output": "sh install.sh"}
+{"input": "move files matching pattern", "output": "find . -name '*.jpg' | xargs -I{} mv {} images/"}
+{"input": "add /tmp to directory stack without changing current directory", "output": "pushd -n /tmp"}
+{"input": "how do I set script.sh to executable for all readable/writable for owner", "output": "chmod 755 script.sh"}
+{"input": "create a directory named 'assignments' in the home folder.", "output": "mkdir ~/assignments"}
+{"input": "show memory usage with wide format", "output": "free -w"}
+{"input": "how do I show first 3 lines of file1.txt and file2.txt with headers", "output": "head -n 3 file1.txt file2.txt"}
+{"input": "how do I remove unused dependencies on debian-based systems", "output": "apt autoremove"}
+{"input": "interactive process viewer with enhanced ui.", "output": "htop"}
+{"input": "open ssh session", "output": "ssh admin@192.168.1.1"}
+{"input": "recursively deletes directory and its contents.", "output": "rm -rf directory"}
+{"input": "how do I show trace data from the last trace-cmd record", "output": "trace-cmd report"}
+{"input": "opens file.bin in an interactive hexadecimal editor.", "output": "hexedit file.bin"}
+{"input": "show detailed information about the python3 package on debian-based systems", "output": "apt show python3"}
+{"input": "numbers lines in file.txt with 2-digit width and separator.", "output": "nl -w 2 -s ': ' file.txt"}
+{"input": "add an selinux file context for /var/www and its contents", "output": "semanage fcontext -a -t httpd_sys_content_t '/var/www(/.*)?'"}
+{"input": "displays all active nftables firewall rules.", "output": "nft list ruleset"}
+{"input": "get columns 1 and 3 from tsv", "output": "cut -f1,3 file.tsv"}
+{"input": "how do I check the ext4 filesystem on /dev/sda1 without making changes", "output": "fsck.ext4 -n /dev/sda1"}
+{"input": "how do I show first 16 bytes of file.bin in hex and ascii", "output": "hexdump -C -n 16 file.bin"}
+{"input": "splits file.txt into files with 1000 lines each named prefix-aa prefix-ab etc.", "output": "split -l 1000 file.txt prefix-"}
+{"input": "show user and group ids for newuser", "output": "id newuser"}
+{"input": "edit crontab", "output": "crontab -e"}
+{"input": "show directory tree structure", "output": "tree"}
+{"input": "uninstalls the apache web server on centos/rhel systems.", "output": "yum remove httpd"}
+{"input": "clear the kernel dmesg log.", "output": "sudo dmesg -c"}
+{"input": "clears local repository of retrieved package files on debian-based systems.", "output": "apt clean"}
+{"input": "show the current crontab for the user.", "output": "crontab -l"}
+{"input": "show memory usage sorted by process", "output": "ps aux --sort=-%mem | head -20"}
+{"input": "create a btrfs subvolume at /mnt/subvol", "output": "btrfs subvolume create /mnt/subvol"}
+{"input": "count number of lines in file with awk", "output": "awk 'END {print NR}' file.txt"}
+{"input": "list all running processes with detailed information", "output": "ps aux"}
+{"input": "displays bridge interfaces and their states.", "output": "bridge link show"}
+{"input": "how do I show last 10 lines of the file 'output.log'", "output": "tail -n 10 output.log"}
+{"input": "shows disk usage with filesystem types.", "output": "df -T"}
+{"input": "synchronizes /src to /dst with archive mode and verbose output.", "output": "rsync -av /src /dst"}
+{"input": "displays all system information kernel hostname etc..", "output": "uname -a"}
+{"input": "find files containing the word config", "output": "grep -rl 'config' ."}
+{"input": "changes the current directory to /etc.", "output": "cd /etc"}
+{"input": "how do I show real-time memory stats", "output": "watch -n 1 free -m"}
+{"input": "runs htop with a 0.5-second refresh interval.", "output": "htop -d 5"}
+{"input": "unlocks the password for user enabling login.", "output": "passwd -u user"}
+{"input": "how do I show information about the 'bash' executable", "output": "ls -l $(which bash)"}
+{"input": "enables the selinux boolean httpd_enable_homedirs persistently.", "output": "setsebool -P httpd_enable_homedirs on"}
+{"input": "show system hardware information", "output": "dmidecode -t system"}
+{"input": "compile main.c and link a library from a custom directory.", "output": "gcc main.c -L/path/to/lib -lcustom -o main"}
+{"input": "show last 3 lines of file1.txt and file2.txt without headers", "output": "tail -q -n 3 file1.txt file2.txt"}
+{"input": "lists processes owned by user.", "output": "ps -u user"}
+{"input": "set the open file limit to 1024 for process with pid 1234", "output": "prlimit --pid 1234 --nofile=1024"}
+{"input": "sends arp requests to 192.168.1.1 to resolve mac address.", "output": "arping 192.168.1.1"}
+{"input": "list listening ports and associated processes", "output": "netstat -tulpn"}
+{"input": "displays password and account aging information for user.", "output": "chage -l user"}
+{"input": "list loaded ebpf programs", "output": "bpftool prog list"}
+{"input": "how do I list network namespaces", "output": "ip netns list"}
+{"input": "how do I show system uptime and load averages", "output": "uptime"}
+{"input": "remove first line of file", "output": "sed -i '1d' file.txt"}
+{"input": "run a container", "output": "docker run ubuntu:22.04"}
+{"input": "how do I list network interfaces and their status", "output": "ip link show"}
+{"input": "displays all but the last 5 lines of access.log.", "output": "head -n -5 access.log"}
+{"input": "check disk space", "output": "df -h"}
+{"input": "run script every day at midnight", "output": "0 0 * * * /path/to/script.sh"}
+{"input": "lists loaded kernel modules.", "output": "lsmod"}
+{"input": "how do I set selinux context for /var/www to httpd_sys_content_t", "output": "chcon -t httpd_sys_content_t /var/www"}
+{"input": "change current directory to /usr/local/bin", "output": "cd /usr/local/bin"}
+{"input": "how do I show first 5 lines of 'database.sql'", "output": "head -n 5 database.sql"}
+{"input": "changes the group ownership of file.txt to group.", "output": "chgrp group file.txt"}
+{"input": "how do I show total memory usage including swap", "output": "free -t"}
+{"input": "how do I search audit logs for login-related events", "output": "ausearch -m LOGIN"}
+{"input": "show system uptime and load averages", "output": "uptime"}
+{"input": "how do I show numa node information", "output": "numactl --hardware"}
+{"input": "how do I show arp table with neighbor entries", "output": "ip neighbor show"}
+{"input": "create a shared library from an object file.", "output": "gcc -shared -o libtest.so main.o"}
+{"input": "lists all btrfs filesystems and their devices.", "output": "btrfs filesystem show"}
+{"input": "lists services and their startup times.", "output": "systemd-analyze blame"}
+{"input": "how do I list block devices with full device paths", "output": "lsblk -p"}
+{"input": "preallocates a 1gb file.img without writing zeros.", "output": "fallocate -l 1G file.img"}
+{"input": "print unique entries in sorted file", "output": "uniq sorted.txt"}
+{"input": "how do I show processes for a specific user in htop", "output": "htop -u user"}
+{"input": "exec command inside container", "output": "docker exec -it mycontainer bash"}
+{"input": "how do I list logged-in users with message status", "output": "who -T"}
+{"input": "compile with gcov for code coverage analysis.", "output": "gcc -fprofile-arcs -ftest-coverage main.c -o main"}
+{"input": "check free disk inodes.", "output": "df -i"}
+{"input": "set the apparmor profile for nginx to enforce mode", "output": "aa-enforce /etc/apparmor.d/usr.sbin.nginx"}
+{"input": "schedules a command to run in one hour.", "output": "at now + 1 hour"}
+{"input": "shows disk usage for the btrfs filesystem at /mnt.", "output": "btrfs filesystem df /mnt"}
+{"input": "check npm version", "output": "npm --version"}
+{"input": "how do I remove cached data and metadata on fedora-based systems", "output": "dnf clean all"}
+{"input": "check g++ version", "output": "g++ --version"}
+{"input": "undo last commit keep changes", "output": "git reset --soft HEAD~1"}
+{"input": "displays the current run-level of the system.", "output": "who -r"}
+{"input": "how do I list available package groups on fedora-based systems", "output": "dnf group list"}
+{"input": "show all kernel parameters and their values", "output": "sysctl -a"}
+{"input": "reports virtual memory statistics every 2 seconds for 5 iterations.", "output": "vmstat 2 5"}
+{"input": "how do I open file1.txt and file2.txt in vim with a horizontal split", "output": "vim -o file1.txt file2.txt"}
+{"input": "lists transaction history for dnf on fedora-based systems.", "output": "dnf history list"}
+{"input": "create empty file todo.txt", "output": "touch todo.txt"}
+{"input": "show the cpu temperature.", "output": "sensors"}
+{"input": "how do I set a 1gb soft and 2gb hard disk quota for user on /mnt", "output": "xfs_quota -x -c 'limit bsoft=1g bhard=2g user' /mnt"}
+{"input": "extract specific file from archive", "output": "tar -xzf archive.tar.gz file.txt"}
+{"input": "show transaction history of yum on centos/rhel systems", "output": "yum history"}
+{"input": "displays tcp protocol statistics.", "output": "netstat -s | grep Tcp"}
+{"input": "show information about user accounts and their login history", "output": "lslogins"}
+{"input": "lists all sockets with associated processes.", "output": "ss -anp"}
+{"input": "lists files sorted by file extension.", "output": "ls -X"}
+{"input": "how do I list services and their startup times", "output": "systemd-analyze blame"}
+{"input": "show cpu info", "output": "lscpu"}
+{"input": "list hidden files", "output": "ls -la"}
+{"input": "show passwd database entry for user", "output": "getent passwd user"}
+{"input": "start node repl", "output": "node"}
+{"input": "find the largest folders in the current directory.", "output": "du -sh * | sort -hr | head -n 5"}
+{"input": "how do I show public ip using curl", "output": "curl ifconfig.me"}
+{"input": "extract zip file here", "output": "unzip archive.zip"}
+{"input": "how do I show processes owned by user in top", "output": "top -u user"}
+{"input": "how do I remove nginx and its configuration files on debian-based systems", "output": "apt purge nginx"}
+{"input": "lists files sorted by modification time newest first.", "output": "ls -t"}
+{"input": "install 'numpy' using pip.", "output": "pip install numpy"}
+{"input": "how do I view logfile.txt in less without clearing the screen on exit", "output": "less -X logfile.txt"}
+{"input": "run java application", "output": "java App"}
+{"input": "how do I list sockets with memory usage details", "output": "ss -M"}
+{"input": "create a character device node /dev/mynode with major 1 minor 3", "output": "mknod /dev/mynode c 1 3"}
+{"input": "shows the installation status and priority of nginx on debian-based systems.", "output": "apt policy nginx"}
+{"input": "opens config.conf in the nano text editor.", "output": "nano config.conf"}
+{"input": "how do I remove duplicate consecutive lines from file.txt", "output": "uniq file.txt"}
+{"input": "show kernel routing table", "output": "netstat -r"}
+{"input": "recursively sets selinux context for /home/user to user_home_t.", "output": "chcon -R -t user_home_t /home/user"}
+{"input": "how do I list the current users cron jobs", "output": "crontab -l"}
+{"input": "how do I show last 50 lines of the system syslog", "output": "tail -n 50 /var/log/syslog"}
+{"input": "show arp table entries", "output": "arp -a"}
+{"input": "update package lists for upgrades on centos/rhel systems", "output": "yum update"}
+{"input": "install the development tools package group on centos/rhel", "output": "yum groupinstall 'Development Tools'"}
+{"input": "runs date every second updating the output.", "output": "watch -n 1 'date'"}
+{"input": "cut second column from file", "output": "cut -d' ' -f2 file.txt"}
